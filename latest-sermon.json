@@ -4,10 +4,28 @@
       "title": "The Last Piece of Wood",
       "speaker": "Pastor Brandon Ball",
       "date": "2026-04-06",
-      "description": "Easter 2026 at Church Unlimited",
+      "description": "Easter 2026",
       "url": "https://www.youtube.com/watch?v=E7HNd_PuXfU",
       "thumbnail": "https://img.youtube.com/vi/E7HNd_PuXfU/maxresdefault.jpg",
       "videoId": "E7HNd_PuXfU"
+    },
+    {
+      "title": "A Little While",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-03-30",
+      "description": "A Little While at Church Unlimited",
+      "url": "https://www.youtube.com/watch?v=XtP-1QP9CNM",
+      "thumbnail": "https://img.youtube.com/vi/XtP-1QP9CNM/maxresdefault.jpg",
+      "videoId": "XtP-1QP9CNM"
+    },
+    {
+      "title": "The True Vine",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-03-27",
+      "description": "The True Vine at Church Unlimited",
+      "url": "https://www.youtube.com/watch?v=sIs2lDRjKuU",
+      "thumbnail": "https://img.youtube.com/vi/sIs2lDRjKuU/maxresdefault.jpg",
+      "videoId": "sIs2lDRjKuU"
     }
   ]
 }
