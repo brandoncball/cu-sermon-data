@@ -1,21 +1,12 @@
 {
   "series": [
     {
-      "name": "Faith",
-      "playlistId": "PLPqJGQdBNQRLWzEdz_mbgwrRTOmRlZK1S",
-      "url": "https://www.youtube.com/playlist?list=PLPqJGQdBNQRLWzEdz_mbgwrRTOmRlZK1S",
-      "thumbnail": "https://img.youtube.com/vi/xOJmzWiLRGc/maxresdefault.jpg",
-      "videoCount": 15,
-      "label": "Current Series",
-      "year": "2026"
-    },
-    {
       "name": "The Farewell Discourse",
       "playlistId": "PLPqJGQdBNQRIXYQHyRs-fb9v4zAHPm92Q",
       "url": "https://www.youtube.com/playlist?list=PLPqJGQdBNQRIXYQHyRs-fb9v4zAHPm92Q",
       "thumbnail": "https://img.youtube.com/vi/mu7tCcWtVtY/maxresdefault.jpg",
       "videoCount": 5,
-      "label": "Series",
+      "label": "Current Series",
       "year": "2026"
     },
     {
