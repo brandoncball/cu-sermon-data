@@ -1,0 +1,46 @@
+name: Update Sermon JSON
+
+# Runs the build-sermons.py script on a schedule and on demand,
+# then commits any change to latest-sermon.json so the website picks it up.
+#
+# Schedule: every 6 hours. Cheap, robust, and catches mid-week uploads
+# (memorial services, special events) in addition to the Sunday cycle.
+#
+# Manual trigger: Actions tab > "Update Sermon JSON" > "Run workflow".
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours, on the hour, UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # required to commit the updated JSON back to the repo
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build sermon JSON
+        env:
+          CU_SERMON_OUTPUT: ${{ github.workspace }}/latest-sermon.json
+        run: python scripts/build-sermons.py
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- latest-sermon.json; then
+            echo "No changes to latest-sermon.json. Nothing to commit."
+            exit 0
+          fi
+          git config user.name  "cu-sermon-bot"
+          git config user.email "cu-sermon-bot@users.noreply.github.com"
+          git add latest-sermon.json
+          git commit -m "Auto-update sermon JSON ($(date -u +%Y-%m-%d))"
+          git push
