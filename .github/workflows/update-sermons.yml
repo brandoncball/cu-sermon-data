@@ -3,14 +3,15 @@ name: Update Sermon JSON
 # Runs the build-sermons.py script on a schedule and on demand,
 # then commits any change to latest-sermon.json so the website picks it up.
 #
-# Schedule: every 6 hours. Cheap, robust, and catches mid-week uploads
-# (memorial services, special events) in addition to the Sunday cycle.
+# Schedule: Monday 12:00 UTC (7am Central CDT / 6am CST). Sunday's sermon
+# uploads to YouTube some time Sunday; this picks it up Monday morning.
+# Use the manual trigger below for special-event uploads mid-week.
 #
 # Manual trigger: Actions tab > "Update Sermon JSON" > "Run workflow".
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours, on the hour, UTC
+    - cron: '0 12 * * 1'   # Monday 12:00 UTC
   workflow_dispatch: {}
 
 permissions:
