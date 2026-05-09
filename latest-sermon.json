@@ -1,10 +1,48 @@
 {
+  "updated": "2026-05-09T13:45:53Z",
+  "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Builder",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-05-04",
+      "description": "Jesus is greater than Moses \u2014 not because He\u2019s a better leader, but because He built the house Moses just lived in. He\u2019s the Apostle who came down with God\u2019s message AND the High Priest who carries us back up \u2014 both directions of the bridge in one Person. And the only thing that ever kept anyone out",
+      "url": "https://www.youtube.com/watch?v=z0OnTFr7-JU",
+      "thumbnail": "https://img.youtube.com/vi/z0OnTFr7-JU/maxresdefault.jpg",
+      "videoId": "z0OnTFr7-JU"
+    },
+    {
+      "title": "Beneath the Verdict",
+      "speaker": "Pastor Adam Newell",
+      "date": "2026-04-27",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=vkN6vc4KQ30",
+      "thumbnail": "https://img.youtube.com/vi/vkN6vc4KQ30/maxresdefault.jpg",
+      "videoId": "vkN6vc4KQ30"
+    },
+    {
+      "title": "Made Like Us",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-04-20",
+      "description": "Religion teaches you to fear death because you might not measure up. Hebrews 2 teaches something better \u2014 Jesus killed death by dying, voided the verdict that was coming for you, and ended a lifetime of bondage in a single moment. This is the message that sets you free.",
+      "url": "https://www.youtube.com/watch?v=EQUTyxgPyEg",
+      "thumbnail": "https://img.youtube.com/vi/EQUTyxgPyEg/maxresdefault.jpg",
+      "videoId": "EQUTyxgPyEg"
+    },
+    {
+      "title": "Better",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-04-13",
+      "description": "The law came through angels \u2014 servants delivering a shadow of what was coming. But God didn\u2019t send another servant with another set of rules for you to try and keep. He sent His Son, who purged your sins by Himself, sat down because the work was finished, and brought you something the angels never c",
+      "url": "https://www.youtube.com/watch?v=xX0cEe3_Da8",
+      "thumbnail": "https://img.youtube.com/vi/xX0cEe3_Da8/maxresdefault.jpg",
+      "videoId": "xX0cEe3_Da8"
+    },
     {
       "title": "The Last Piece of Wood",
       "speaker": "Pastor Brandon Ball",
       "date": "2026-04-06",
-      "description": "Easter 2026",
+      "description": "Three times in Scripture, God threw wood into a problem. At Marah, the bitter water became sweet. At the Jordan, the axehead that sank floated. And at Calvary, the curse became a blessing, the dead were made alive, and the old became new.",
       "url": "https://www.youtube.com/watch?v=E7HNd_PuXfU",
       "thumbnail": "https://img.youtube.com/vi/E7HNd_PuXfU/maxresdefault.jpg",
       "videoId": "E7HNd_PuXfU"
@@ -13,19 +51,10 @@
       "title": "A Little While",
       "speaker": "Pastor Brandon Ball",
       "date": "2026-03-30",
-      "description": "A Little While at Church Unlimited",
+      "description": "The Farewell Discourse closes here. Five chapters. One night. One room and one walk. And the last word of Jesus\u2019 teaching before He prays and enters the garden is: I have overcome.\nJohn 13 \u2014 He served them, and showed them what love looks like.\nJohn 14 \u2014 He promised them a place and sent them the Sp",
       "url": "https://www.youtube.com/watch?v=XtP-1QP9CNM",
       "thumbnail": "https://img.youtube.com/vi/XtP-1QP9CNM/maxresdefault.jpg",
       "videoId": "XtP-1QP9CNM"
-    },
-    {
-      "title": "The True Vine",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-03-27",
-      "description": "The True Vine at Church Unlimited",
-      "url": "https://www.youtube.com/watch?v=sIs2lDRjKuU",
-      "thumbnail": "https://img.youtube.com/vi/sIs2lDRjKuU/maxresdefault.jpg",
-      "videoId": "sIs2lDRjKuU"
     }
   ]
 }
