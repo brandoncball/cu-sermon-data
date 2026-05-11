@@ -1,7 +1,16 @@
 {
-  "updated": "2026-05-09T13:45:53Z",
+  "updated": "2026-05-11T10:38:10Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Greater Joshua",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-05-11",
+      "description": "There remains a rest for the people of God, and Joshua never gave it because Jesus was always the one who would. You stop striving by trusting that He already finished what you\u2019ve been trying to complete. Come boldly, because the throne is grace and the High Priest is yours.",
+      "url": "https://www.youtube.com/watch?v=q4KBAsMvsRo",
+      "thumbnail": "https://img.youtube.com/vi/q4KBAsMvsRo/maxresdefault.jpg",
+      "videoId": "q4KBAsMvsRo"
+    },
     {
       "title": "The Builder",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=E7HNd_PuXfU",
       "thumbnail": "https://img.youtube.com/vi/E7HNd_PuXfU/maxresdefault.jpg",
       "videoId": "E7HNd_PuXfU"
-    },
-    {
-      "title": "A Little While",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-03-30",
-      "description": "The Farewell Discourse closes here. Five chapters. One night. One room and one walk. And the last word of Jesus\u2019 teaching before He prays and enters the garden is: I have overcome.\nJohn 13 \u2014 He served them, and showed them what love looks like.\nJohn 14 \u2014 He promised them a place and sent them the Sp",
-      "url": "https://www.youtube.com/watch?v=XtP-1QP9CNM",
-      "thumbnail": "https://img.youtube.com/vi/XtP-1QP9CNM/maxresdefault.jpg",
-      "videoId": "XtP-1QP9CNM"
     }
   ]
 }
