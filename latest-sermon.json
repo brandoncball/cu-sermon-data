@@ -1,7 +1,16 @@
 {
-  "updated": "2026-05-11T10:38:10Z",
+  "updated": "2026-05-18T11:06:32Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "From Milk to Melchizedek",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-05-18",
+      "description": "Hebrews 5 hands you a Priest who shared your weakness without inheriting your sin, who was appointed by the Father forever, and who walked your life until He could carry it. The same chapter then asks whether you have grown enough to recognize the difference between the milk of the old system and th",
+      "url": "https://www.youtube.com/watch?v=eEYC2DFzYMM",
+      "thumbnail": "https://img.youtube.com/vi/eEYC2DFzYMM/maxresdefault.jpg",
+      "videoId": "eEYC2DFzYMM"
+    },
     {
       "title": "The Greater Joshua",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=xX0cEe3_Da8",
       "thumbnail": "https://img.youtube.com/vi/xX0cEe3_Da8/maxresdefault.jpg",
       "videoId": "xX0cEe3_Da8"
-    },
-    {
-      "title": "The Last Piece of Wood",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-04-06",
-      "description": "Three times in Scripture, God threw wood into a problem. At Marah, the bitter water became sweet. At the Jordan, the axehead that sank floated. And at Calvary, the curse became a blessing, the dead were made alive, and the old became new.",
-      "url": "https://www.youtube.com/watch?v=E7HNd_PuXfU",
-      "thumbnail": "https://img.youtube.com/vi/E7HNd_PuXfU/maxresdefault.jpg",
-      "videoId": "E7HNd_PuXfU"
     }
   ]
 }
