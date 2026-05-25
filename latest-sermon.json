@@ -1,7 +1,16 @@
 {
-  "updated": "2026-05-18T11:06:32Z",
+  "updated": "2026-05-25T11:09:53Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Anchor That Holds You",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-05-25",
+      "description": "Hebrews 6 is the chapter people use to scare Christians, but read in context it is actually one of the most secure passages in the New Testament. The writer\u2019s warning is not aimed at the believer who fails \u2014 it is aimed at the man who tasted Christ and walked back to religion as if the cross was not",
+      "url": "https://www.youtube.com/watch?v=Nt6sZggqauQ",
+      "thumbnail": "https://img.youtube.com/vi/Nt6sZggqauQ/maxresdefault.jpg",
+      "videoId": "Nt6sZggqauQ"
+    },
     {
       "title": "From Milk to Melchizedek",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=EQUTyxgPyEg",
       "thumbnail": "https://img.youtube.com/vi/EQUTyxgPyEg/maxresdefault.jpg",
       "videoId": "EQUTyxgPyEg"
-    },
-    {
-      "title": "Better",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-04-13",
-      "description": "The law came through angels \u2014 servants delivering a shadow of what was coming. But God didn\u2019t send another servant with another set of rules for you to try and keep. He sent His Son, who purged your sins by Himself, sat down because the work was finished, and brought you something the angels never c",
-      "url": "https://www.youtube.com/watch?v=xX0cEe3_Da8",
-      "thumbnail": "https://img.youtube.com/vi/xX0cEe3_Da8/maxresdefault.jpg",
-      "videoId": "xX0cEe3_Da8"
     }
   ]
 }
