@@ -1,7 +1,16 @@
 {
-  "updated": "2026-05-25T11:09:53Z",
+  "updated": "2026-06-01T12:35:59Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "A Priest Who Never Dies",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-06-01",
+      "description": "Hebrews 7 hands you a Priest who showed up before the priesthood, outranked the system, never died, and ended the sacrifice business with one offering of Himself. Because He always lives, He saves you to the uttermost, with no expiration date, no replacement coming, and no future moment where He tag",
+      "url": "https://www.youtube.com/watch?v=ZHcXVJfhdXc",
+      "thumbnail": "https://img.youtube.com/vi/ZHcXVJfhdXc/maxresdefault.jpg",
+      "videoId": "ZHcXVJfhdXc"
+    },
     {
       "title": "The Anchor That Holds You",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=vkN6vc4KQ30",
       "thumbnail": "https://img.youtube.com/vi/vkN6vc4KQ30/maxresdefault.jpg",
       "videoId": "vkN6vc4KQ30"
-    },
-    {
-      "title": "Made Like Us",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-04-20",
-      "description": "Religion teaches you to fear death because you might not measure up. Hebrews 2 teaches something better \u2014 Jesus killed death by dying, voided the verdict that was coming for you, and ended a lifetime of bondage in a single moment. This is the message that sets you free.",
-      "url": "https://www.youtube.com/watch?v=EQUTyxgPyEg",
-      "thumbnail": "https://img.youtube.com/vi/EQUTyxgPyEg/maxresdefault.jpg",
-      "videoId": "EQUTyxgPyEg"
     }
   ]
 }
