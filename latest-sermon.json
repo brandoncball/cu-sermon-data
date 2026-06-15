@@ -1,7 +1,16 @@
 {
-  "updated": "2026-06-08T11:57:07Z",
+  "updated": "2026-06-15T13:12:37Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Still Standing",
+      "speaker": "Pastor Adam Newell",
+      "date": "2026-06-15",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=_JQAIfYRHfQ",
+      "thumbnail": "https://img.youtube.com/vi/_JQAIfYRHfQ/maxresdefault.jpg",
+      "videoId": "_JQAIfYRHfQ"
+    },
     {
       "title": "The Covenant Written on You",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=q4KBAsMvsRo",
       "thumbnail": "https://img.youtube.com/vi/q4KBAsMvsRo/maxresdefault.jpg",
       "videoId": "q4KBAsMvsRo"
-    },
-    {
-      "title": "The Builder",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-05-04",
-      "description": "Jesus is greater than Moses \u2014 not because He\u2019s a better leader, but because He built the house Moses just lived in. He\u2019s the Apostle who came down with God\u2019s message AND the High Priest who carries us back up \u2014 both directions of the bridge in one Person. And the only thing that ever kept anyone out",
-      "url": "https://www.youtube.com/watch?v=z0OnTFr7-JU",
-      "thumbnail": "https://img.youtube.com/vi/z0OnTFr7-JU/maxresdefault.jpg",
-      "videoId": "z0OnTFr7-JU"
     }
   ]
 }
