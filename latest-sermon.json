@@ -1,7 +1,16 @@
 {
-  "updated": "2026-06-15T13:12:37Z",
+  "updated": "2026-06-22T12:49:20Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Blood That Changed Everything",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-06-22",
+      "description": "Hebrews 9 walks you through the closed rooms of the old tabernacle and proves even the most beautiful religious system could not clean a conscience. Then it follows Jesus into the real sanctuary in heaven, with His own blood, once for all, putting away sin by the sacrifice of Himself and securing an",
+      "url": "https://www.youtube.com/watch?v=RgwtkaUbkag",
+      "thumbnail": "https://img.youtube.com/vi/RgwtkaUbkag/maxresdefault.jpg",
+      "videoId": "RgwtkaUbkag"
+    },
     {
       "title": "Still Standing",
       "speaker": "Pastor Adam Newell",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=eEYC2DFzYMM",
       "thumbnail": "https://img.youtube.com/vi/eEYC2DFzYMM/maxresdefault.jpg",
       "videoId": "eEYC2DFzYMM"
-    },
-    {
-      "title": "The Greater Joshua",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-05-11",
-      "description": "There remains a rest for the people of God, and Joshua never gave it because Jesus was always the one who would. You stop striving by trusting that He already finished what you\u2019ve been trying to complete. Come boldly, because the throne is grace and the High Priest is yours.",
-      "url": "https://www.youtube.com/watch?v=q4KBAsMvsRo",
-      "thumbnail": "https://img.youtube.com/vi/q4KBAsMvsRo/maxresdefault.jpg",
-      "videoId": "q4KBAsMvsRo"
     }
   ]
 }
