@@ -1,7 +1,16 @@
 {
-  "updated": "2026-06-22T12:49:20Z",
+  "updated": "2026-06-29T11:57:46Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Priest Who Sat Down",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-06-29",
+      "description": "Hebrews 10 closes the case on the old sacrificial system and hands you the door it could never open \u2014 a Priest seated at the right hand of God because one offering perfected forever the people He came to save. The veil that used to keep worshipers out has been torn from top to bottom, and the only b",
+      "url": "https://www.youtube.com/watch?v=NSU4ULBtaTk",
+      "thumbnail": "https://img.youtube.com/vi/NSU4ULBtaTk/maxresdefault.jpg",
+      "videoId": "NSU4ULBtaTk"
+    },
     {
       "title": "The Blood That Changed Everything",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=Nt6sZggqauQ",
       "thumbnail": "https://img.youtube.com/vi/Nt6sZggqauQ/maxresdefault.jpg",
       "videoId": "Nt6sZggqauQ"
-    },
-    {
-      "title": "From Milk to Melchizedek",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-05-18",
-      "description": "Hebrews 5 hands you a Priest who shared your weakness without inheriting your sin, who was appointed by the Father forever, and who walked your life until He could carry it. The same chapter then asks whether you have grown enough to recognize the difference between the milk of the old system and th",
-      "url": "https://www.youtube.com/watch?v=eEYC2DFzYMM",
-      "thumbnail": "https://img.youtube.com/vi/eEYC2DFzYMM/maxresdefault.jpg",
-      "videoId": "eEYC2DFzYMM"
     }
   ]
 }
