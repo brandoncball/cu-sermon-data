@@ -1,7 +1,16 @@
 {
-  "updated": "2026-06-29T11:57:46Z",
+  "updated": "2026-07-06T11:26:10Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "In the Promise",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-07-06",
+      "description": "Faith was never a tool to pry things out of God\u2019s hand; it is your unwavering rest in the one thing already true \u2014 you have been made perfectly right with God. The heroes of Hebrews 11 only hoped for the righteousness you now possess in Christ. So take your eyes off your faith as a way to get someth",
+      "url": "https://www.youtube.com/watch?v=dI61osIkEkY",
+      "thumbnail": "https://img.youtube.com/vi/dI61osIkEkY/maxresdefault.jpg",
+      "videoId": "dI61osIkEkY"
+    },
     {
       "title": "The Priest Who Sat Down",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=ZHcXVJfhdXc",
       "thumbnail": "https://img.youtube.com/vi/ZHcXVJfhdXc/maxresdefault.jpg",
       "videoId": "ZHcXVJfhdXc"
-    },
-    {
-      "title": "The Anchor That Holds You",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-05-25",
-      "description": "Hebrews 6 is the chapter people use to scare Christians, but read in context it is actually one of the most secure passages in the New Testament. The writer\u2019s warning is not aimed at the believer who fails \u2014 it is aimed at the man who tasted Christ and walked back to religion as if the cross was not",
-      "url": "https://www.youtube.com/watch?v=Nt6sZggqauQ",
-      "thumbnail": "https://img.youtube.com/vi/Nt6sZggqauQ/maxresdefault.jpg",
-      "videoId": "Nt6sZggqauQ"
     }
   ]
 }
