@@ -7,6 +7,12 @@ name: Update Watch Grid JSON
 # Sunday's service uploads to YouTube late Sunday night Central; this picks it
 # up a couple hours later so the Watch grid is current before Monday morning.
 #
+# The build also resolves each video's message start time (so the on-site
+# player can skip worship) by reading the video's auto-captions with yt-dlp.
+# See the header of scripts/build-watch.py for how that is decided. Videos
+# whose captions are not ready yet are retried automatically on the next run,
+# which is why yt-dlp is installed here.
+#
 # Manual trigger: Actions tab > "Update Watch Grid JSON" > "Run workflow".
 
 on:
@@ -22,12 +28,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+
+      - name: Install yt-dlp (used to read captions for message detection)
+        run: python -m pip install --upgrade --quiet yt-dlp
 
       - name: Build watch JSON
         env:
