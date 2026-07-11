@@ -1,7 +1,27 @@
 {
-  "updated": "2026-06-23T19:31:49Z",
+  "updated": "2026-07-11T10:03:53Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "In the Promise",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-07-06",
+      "description": "Faith was never a tool to pry things out of God\u2019s hand; it is your unwavering rest in the one thing already true \u2014 you have been made perfectly right with God. The heroes of Hebrews 11 only hoped for the righteousness you now possess in Christ. So take your eyes off your faith as a way to get someth",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=dI61osIkEkY",
+      "thumbnail": "https://img.youtube.com/vi/dI61osIkEkY/hqdefault.jpg",
+      "videoId": "dI61osIkEkY"
+    },
+    {
+      "title": "The Priest Who Sat Down",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-06-29",
+      "description": "Hebrews 10 closes the case on the old sacrificial system and hands you the door it could never open \u2014 a Priest seated at the right hand of God because one offering perfected forever the people He came to save. The veil that used to keep worshipers out has been torn from top to bottom, and the only b",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=NSU4ULBtaTk",
+      "thumbnail": "https://img.youtube.com/vi/NSU4ULBtaTk/hqdefault.jpg",
+      "videoId": "NSU4ULBtaTk"
+    },
     {
       "title": "The Blood That Changed Everything",
       "speaker": "Pastor Brandon Ball",
@@ -71,26 +91,6 @@
       "url": "https://www.youtube.com/watch?v=q4KBAsMvsRo",
       "thumbnail": "https://img.youtube.com/vi/q4KBAsMvsRo/hqdefault.jpg",
       "videoId": "q4KBAsMvsRo"
-    },
-    {
-      "title": "The Builder",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-05-04",
-      "description": "Jesus is greater than Moses \u2014 not because He\u2019s a better leader, but because He built the house Moses just lived in. He\u2019s the Apostle who came down with God\u2019s message AND the High Priest who carries us back up \u2014 both directions of the bridge in one Person. And the only thing that ever kept anyone out",
-      "start": 0,
-      "url": "https://www.youtube.com/watch?v=z0OnTFr7-JU",
-      "thumbnail": "https://img.youtube.com/vi/z0OnTFr7-JU/hqdefault.jpg",
-      "videoId": "z0OnTFr7-JU"
-    },
-    {
-      "title": "Beneath the Verdict",
-      "speaker": "Pastor Adam Newell",
-      "date": "2026-04-27",
-      "description": "",
-      "start": 0,
-      "url": "https://www.youtube.com/watch?v=vkN6vc4KQ30",
-      "thumbnail": "https://img.youtube.com/vi/vkN6vc4KQ30/hqdefault.jpg",
-      "videoId": "vkN6vc4KQ30"
     }
   ]
 }
