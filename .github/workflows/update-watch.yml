@@ -1,0 +1,47 @@
+name: Update Watch Grid JSON
+
+# Runs build-watch.py on a schedule and on demand, then commits any change
+# to watch-videos.json so the Watch page picks it up.
+#
+# Schedule: Monday 07:10 UTC (10 min after the sermon job, to stagger them).
+# Sunday's service uploads to YouTube late Sunday night Central; this picks it
+# up a couple hours later so the Watch grid is current before Monday morning.
+#
+# Manual trigger: Actions tab > "Update Watch Grid JSON" > "Run workflow".
+
+on:
+  schedule:
+    - cron: '10 7 * * 1'   # Monday 07:10 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # required to commit the updated JSON back to the repo
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build watch JSON
+        env:
+          CU_WATCH_OUTPUT: ${{ github.workspace }}/watch-videos.json
+        run: python scripts/build-watch.py
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- watch-videos.json; then
+            echo "No changes to watch-videos.json. Nothing to commit."
+            exit 0
+          fi
+          git config user.name  "cu-sermon-bot"
+          git config user.email "cu-sermon-bot@users.noreply.github.com"
+          git add watch-videos.json
+          git commit -m "Auto-update watch grid JSON ($(date -u +%Y-%m-%d))"
+          git push
