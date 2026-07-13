@@ -1,7 +1,17 @@
 {
-  "updated": "2026-07-11T10:52:25Z",
+  "updated": "2026-07-13T10:34:33Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Sin That Looks Back",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-07-13",
+      "description": "Hebrews 12 opens with therefore because everything it asks rests on a finished cross, and the sin it warns against was never your bad habits \u2014 it is the pull to look back to the old system instead of resting in Christ. The race is not trying harder; it is fixing your eyes on Jesus, the author and fi",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=RglRLZrlVeM",
+      "thumbnail": "https://img.youtube.com/vi/RglRLZrlVeM/hqdefault.jpg",
+      "videoId": "RglRLZrlVeM"
+    },
     {
       "title": "In the Promise",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=eEYC2DFzYMM",
       "thumbnail": "https://img.youtube.com/vi/eEYC2DFzYMM/hqdefault.jpg",
       "videoId": "eEYC2DFzYMM"
-    },
-    {
-      "title": "The Greater Joshua",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-05-11",
-      "description": "There remains a rest for the people of God, and Joshua never gave it because Jesus was always the one who would. You stop striving by trusting that He already finished what you\u2019ve been trying to complete. Come boldly, because the throne is grace and the High Priest is yours.",
-      "start": 0,
-      "url": "https://www.youtube.com/watch?v=q4KBAsMvsRo",
-      "thumbnail": "https://img.youtube.com/vi/q4KBAsMvsRo/hqdefault.jpg",
-      "videoId": "q4KBAsMvsRo"
     }
   ]
 }
