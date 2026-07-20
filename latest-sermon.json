@@ -1,7 +1,16 @@
 {
-  "updated": "2026-07-13T10:24:32Z",
+  "updated": "2026-07-20T10:08:48Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The God Who Never Leaves",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-07-20",
+      "description": "Hebrews ends where it has been heading for thirteen chapters \u2014 not with a demand, but with a benediction from the God of peace who raised Jesus, that great Shepherd of the sheep, from the dead through the blood of an everlasting covenant. Every room of your ordinary life \u2014 the table, the door, the b",
+      "url": "https://www.youtube.com/watch?v=dYST-dsmzys",
+      "thumbnail": "https://img.youtube.com/vi/dYST-dsmzys/maxresdefault.jpg",
+      "videoId": "dYST-dsmzys"
+    },
     {
       "title": "The Sin That Looks Back",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=_JQAIfYRHfQ",
       "thumbnail": "https://img.youtube.com/vi/_JQAIfYRHfQ/maxresdefault.jpg",
       "videoId": "_JQAIfYRHfQ"
-    },
-    {
-      "title": "The Covenant Written on You",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-06-08",
-      "description": "Hebrews 8 lands the plane. There\u2019s a Priest who sat down because His work is done, the Mediator of a covenant where God Himself does the keeping. The four I-wills mean your law is written on your heart, your identity settled, your access direct, your sins remembered no more. Heaven has declared the ",
-      "url": "https://www.youtube.com/watch?v=Ckq01M8kmL4",
-      "thumbnail": "https://img.youtube.com/vi/Ckq01M8kmL4/maxresdefault.jpg",
-      "videoId": "Ckq01M8kmL4"
     }
   ]
 }
