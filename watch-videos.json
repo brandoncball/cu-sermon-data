@@ -1,7 +1,17 @@
 {
-  "updated": "2026-07-16T13:16:14Z",
+  "updated": "2026-07-20T10:19:43Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The God Who Never Leaves",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-07-20",
+      "description": "Hebrews ends where it has been heading for thirteen chapters \u2014 not with a demand, but with a benediction from the God of peace who raised Jesus, that great Shepherd of the sheep, from the dead through the blood of an everlasting covenant. Every room of your ordinary life \u2014 the table, the door, the b",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=dYST-dsmzys",
+      "thumbnail": "https://img.youtube.com/vi/dYST-dsmzys/hqdefault.jpg",
+      "videoId": "dYST-dsmzys"
+    },
     {
       "title": "The Sin That Looks Back",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=Nt6sZggqauQ",
       "thumbnail": "https://img.youtube.com/vi/Nt6sZggqauQ/hqdefault.jpg",
       "videoId": "Nt6sZggqauQ"
-    },
-    {
-      "title": "From Milk to Melchizedek",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-05-18",
-      "description": "Hebrews 5 hands you a Priest who shared your weakness without inheriting your sin, who was appointed by the Father forever, and who walked your life until He could carry it. The same chapter then asks whether you have grown enough to recognize the difference between the milk of the old system and th",
-      "start": 2447,
-      "url": "https://www.youtube.com/watch?v=eEYC2DFzYMM",
-      "thumbnail": "https://img.youtube.com/vi/eEYC2DFzYMM/hqdefault.jpg",
-      "videoId": "eEYC2DFzYMM"
     }
   ]
 }
