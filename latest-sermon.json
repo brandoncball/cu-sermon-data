@@ -1,7 +1,16 @@
 {
-  "updated": "2026-07-20T10:08:48Z",
+  "updated": "2026-07-27T10:41:17Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "You Can't Follow Yourself",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-07-27",
+      "description": "For years we have been told the Christian life is about following Jesus and working to become more like Him. But the New Covenant tells a better story: what Jesus did, He did as us, so His cross became our cross and in Him we were made the very righteousness of God. This is why we cannot follow Jesu",
+      "url": "https://www.youtube.com/watch?v=XmHLk3uFPZw",
+      "thumbnail": "https://img.youtube.com/vi/XmHLk3uFPZw/maxresdefault.jpg",
+      "videoId": "XmHLk3uFPZw"
+    },
     {
       "title": "The God Who Never Leaves",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=RgwtkaUbkag",
       "thumbnail": "https://img.youtube.com/vi/RgwtkaUbkag/maxresdefault.jpg",
       "videoId": "RgwtkaUbkag"
-    },
-    {
-      "title": "Still Standing",
-      "speaker": "Pastor Adam Newell",
-      "date": "2026-06-15",
-      "description": "",
-      "url": "https://www.youtube.com/watch?v=_JQAIfYRHfQ",
-      "thumbnail": "https://img.youtube.com/vi/_JQAIfYRHfQ/maxresdefault.jpg",
-      "videoId": "_JQAIfYRHfQ"
     }
   ]
 }
