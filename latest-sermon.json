@@ -1,7 +1,16 @@
 {
-  "updated": "2026-07-27T10:41:17Z",
+  "updated": "2026-08-03T10:41:25Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "One and the Same",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-03",
+      "description": "The world says count to ten when life presses in; the gospel says count to one. Through the cross Jesus joined Himself to you, and you are now one spirit with Him. Your sufficiency is not something you produce under pressure \u2014 it is Someone who lives inside you.\n\nPastor's Notes: https://notes.subspl",
+      "url": "https://www.youtube.com/watch?v=PLeT_eQbL-A",
+      "thumbnail": "https://img.youtube.com/vi/PLeT_eQbL-A/maxresdefault.jpg",
+      "videoId": "PLeT_eQbL-A"
+    },
     {
       "title": "You Can't Follow Yourself",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=NSU4ULBtaTk",
       "thumbnail": "https://img.youtube.com/vi/NSU4ULBtaTk/maxresdefault.jpg",
       "videoId": "NSU4ULBtaTk"
-    },
-    {
-      "title": "The Blood That Changed Everything",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-06-22",
-      "description": "Hebrews 9 walks you through the closed rooms of the old tabernacle and proves even the most beautiful religious system could not clean a conscience. Then it follows Jesus into the real sanctuary in heaven, with His own blood, once for all, putting away sin by the sacrifice of Himself and securing an",
-      "url": "https://www.youtube.com/watch?v=RgwtkaUbkag",
-      "thumbnail": "https://img.youtube.com/vi/RgwtkaUbkag/maxresdefault.jpg",
-      "videoId": "RgwtkaUbkag"
     }
   ]
 }
