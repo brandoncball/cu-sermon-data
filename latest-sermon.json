@@ -1,7 +1,16 @@
 {
-  "updated": "2026-08-03T10:41:25Z",
+  "updated": "2026-08-10T08:25:07Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Heavy Lifting",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-10",
+      "description": "Religion keeps adding pulleys: pray more, fast more, give more, and maybe the weight will finally move. The gospel announces that Jesus already did the heavy lifting, making us right with God without us lifting a finger. His grace is our sufficiency in need and in plenty, and His yoke is easy becaus",
+      "url": "https://www.youtube.com/watch?v=gD26K2d9OAs",
+      "thumbnail": "https://img.youtube.com/vi/gD26K2d9OAs/maxresdefault.jpg",
+      "videoId": "gD26K2d9OAs"
+    },
     {
       "title": "One and the Same",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=dI61osIkEkY",
       "thumbnail": "https://img.youtube.com/vi/dI61osIkEkY/maxresdefault.jpg",
       "videoId": "dI61osIkEkY"
-    },
-    {
-      "title": "The Priest Who Sat Down",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-06-29",
-      "description": "Hebrews 10 closes the case on the old sacrificial system and hands you the door it could never open \u2014 a Priest seated at the right hand of God because one offering perfected forever the people He came to save. The veil that used to keep worshipers out has been torn from top to bottom, and the only b",
-      "url": "https://www.youtube.com/watch?v=NSU4ULBtaTk",
-      "thumbnail": "https://img.youtube.com/vi/NSU4ULBtaTk/maxresdefault.jpg",
-      "videoId": "NSU4ULBtaTk"
     }
   ]
 }
