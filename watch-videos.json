@@ -1,7 +1,17 @@
 {
-  "updated": "2026-08-03T10:50:45Z",
+  "updated": "2026-08-10T08:49:06Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Heavy Lifting",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-10",
+      "description": "Religion keeps adding pulleys: pray more, fast more, give more, and maybe the weight will finally move. The gospel announces that Jesus already did the heavy lifting, making us right with God without us lifting a finger. His grace is our sufficiency in need and in plenty, and His yoke is easy becaus",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=gD26K2d9OAs",
+      "thumbnail": "https://img.youtube.com/vi/gD26K2d9OAs/hqdefault.jpg",
+      "videoId": "gD26K2d9OAs"
+    },
     {
       "title": "One and the Same",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=_JQAIfYRHfQ",
       "thumbnail": "https://img.youtube.com/vi/_JQAIfYRHfQ/hqdefault.jpg",
       "videoId": "_JQAIfYRHfQ"
-    },
-    {
-      "title": "The Covenant Written on You",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-06-08",
-      "description": "Hebrews 8 lands the plane. There\u2019s a Priest who sat down because His work is done, the Mediator of a covenant where God Himself does the keeping. The four I-wills mean your law is written on your heart, your identity settled, your access direct, your sins remembered no more. Heaven has declared the ",
-      "start": 1930,
-      "url": "https://www.youtube.com/watch?v=Ckq01M8kmL4",
-      "thumbnail": "https://img.youtube.com/vi/Ckq01M8kmL4/hqdefault.jpg",
-      "videoId": "Ckq01M8kmL4"
     }
   ]
 }
