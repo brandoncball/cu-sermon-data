@@ -1,7 +1,16 @@
 {
-  "updated": "2026-08-10T08:25:07Z",
+  "updated": "2026-08-17T07:51:25Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Two Yokes",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-17",
+      "description": "Jesus offered a yoke that is easy and a burden that is light, while the Law laid burdens on men\u2019s shoulders that no one could carry. These are two yokes, two methods of righteousness, and every person is attached to one or the other. The Law was given to show us our sin and silence every boast; grac",
+      "url": "https://www.youtube.com/watch?v=LFdW11sLwRE",
+      "thumbnail": "https://img.youtube.com/vi/LFdW11sLwRE/maxresdefault.jpg",
+      "videoId": "LFdW11sLwRE"
+    },
     {
       "title": "Heavy Lifting",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=RglRLZrlVeM",
       "thumbnail": "https://img.youtube.com/vi/RglRLZrlVeM/maxresdefault.jpg",
       "videoId": "RglRLZrlVeM"
-    },
-    {
-      "title": "In the Promise",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-06",
-      "description": "Faith was never a tool to pry things out of God\u2019s hand; it is your unwavering rest in the one thing already true \u2014 you have been made perfectly right with God. The heroes of Hebrews 11 only hoped for the righteousness you now possess in Christ. So take your eyes off your faith as a way to get someth",
-      "url": "https://www.youtube.com/watch?v=dI61osIkEkY",
-      "thumbnail": "https://img.youtube.com/vi/dI61osIkEkY/maxresdefault.jpg",
-      "videoId": "dI61osIkEkY"
     }
   ]
 }
