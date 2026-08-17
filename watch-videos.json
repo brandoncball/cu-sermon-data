@@ -1,7 +1,17 @@
 {
-  "updated": "2026-08-11T02:55:22Z",
+  "updated": "2026-08-17T07:58:13Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Two Yokes",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-17",
+      "description": "Jesus offered a yoke that is easy and a burden that is light, while the Law laid burdens on men\u2019s shoulders that no one could carry. These are two yokes, two methods of righteousness, and every person is attached to one or the other. The Law was given to show us our sin and silence every boast; grac",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=LFdW11sLwRE",
+      "thumbnail": "https://img.youtube.com/vi/LFdW11sLwRE/hqdefault.jpg",
+      "videoId": "LFdW11sLwRE"
+    },
     {
       "title": "Heavy Lifting",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=RgwtkaUbkag",
       "thumbnail": "https://img.youtube.com/vi/RgwtkaUbkag/hqdefault.jpg",
       "videoId": "RgwtkaUbkag"
-    },
-    {
-      "title": "Still Standing",
-      "speaker": "Pastor Adam Newell",
-      "date": "2026-06-15",
-      "description": "",
-      "start": 0,
-      "url": "https://www.youtube.com/watch?v=_JQAIfYRHfQ",
-      "thumbnail": "https://img.youtube.com/vi/_JQAIfYRHfQ/hqdefault.jpg",
-      "videoId": "_JQAIfYRHfQ"
     }
   ]
 }
