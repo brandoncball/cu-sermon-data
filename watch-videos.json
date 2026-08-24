@@ -1,7 +1,17 @@
 {
-  "updated": "2026-08-17T12:52:41Z",
+  "updated": "2026-08-24T08:02:48Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Unqualified",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-24",
+      "description": "Great faith is not faith in the greatness of your faith; it is faith in the greatness of Jesus. You were unqualified, but Jesus qualified you by removing every charge and making you righteous. The unqualified receive everything because the Qualified One did everything.\n\nPastor's Notes: https://notes",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
+      "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/hqdefault.jpg",
+      "videoId": "BsGRauiJjhA"
+    },
     {
       "title": "Two Yokes",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=NSU4ULBtaTk",
       "thumbnail": "https://img.youtube.com/vi/NSU4ULBtaTk/hqdefault.jpg",
       "videoId": "NSU4ULBtaTk"
-    },
-    {
-      "title": "The Blood That Changed Everything",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-06-22",
-      "description": "Hebrews 9 walks you through the closed rooms of the old tabernacle and proves even the most beautiful religious system could not clean a conscience. Then it follows Jesus into the real sanctuary in heaven, with His own blood, once for all, putting away sin by the sacrifice of Himself and securing an",
-      "start": 0,
-      "url": "https://www.youtube.com/watch?v=RgwtkaUbkag",
-      "thumbnail": "https://img.youtube.com/vi/RgwtkaUbkag/hqdefault.jpg",
-      "videoId": "RgwtkaUbkag"
     }
   ]
 }
