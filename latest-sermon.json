@@ -1,7 +1,16 @@
 {
-  "updated": "2026-08-17T07:51:25Z",
+  "updated": "2026-08-24T07:56:31Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Unqualified",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-24",
+      "description": "Great faith is not faith in the greatness of your faith; it is faith in the greatness of Jesus. You were unqualified, but Jesus qualified you by removing every charge and making you righteous. The unqualified receive everything because the Qualified One did everything.\n\nPastor's Notes: https://notes",
+      "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
+      "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/maxresdefault.jpg",
+      "videoId": "BsGRauiJjhA"
+    },
     {
       "title": "Two Yokes",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=dYST-dsmzys",
       "thumbnail": "https://img.youtube.com/vi/dYST-dsmzys/maxresdefault.jpg",
       "videoId": "dYST-dsmzys"
-    },
-    {
-      "title": "The Sin That Looks Back",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-13",
-      "description": "Hebrews 12 opens with therefore because everything it asks rests on a finished cross, and the sin it warns against was never your bad habits \u2014 it is the pull to look back to the old system instead of resting in Christ. The race is not trying harder; it is fixing your eyes on Jesus, the author and fi",
-      "url": "https://www.youtube.com/watch?v=RglRLZrlVeM",
-      "thumbnail": "https://img.youtube.com/vi/RglRLZrlVeM/maxresdefault.jpg",
-      "videoId": "RglRLZrlVeM"
     }
   ]
 }
