@@ -1,7 +1,17 @@
 {
-  "updated": "2026-08-24T08:02:48Z",
+  "updated": "2026-08-31T12:52:01Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The End of Trying",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-30",
+      "description": "Israel\u2019s great mistake was not a lack of passion for God, but trying to establish the righteousness God wanted to give. Christ has brought that pursuit to an end because everything necessary has already been accomplished in Him. Believe in the risen Jesus and receive the wealth of heaven, God\u2019s own ",
+      "start": 2369,
+      "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
+      "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/hqdefault.jpg",
+      "videoId": "nZ7ReXkhfJA"
+    },
     {
       "title": "The Unqualified",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=dI61osIkEkY",
       "thumbnail": "https://img.youtube.com/vi/dI61osIkEkY/hqdefault.jpg",
       "videoId": "dI61osIkEkY"
-    },
-    {
-      "title": "The Priest Who Sat Down",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-06-29",
-      "description": "Hebrews 10 closes the case on the old sacrificial system and hands you the door it could never open \u2014 a Priest seated at the right hand of God because one offering perfected forever the people He came to save. The veil that used to keep worshipers out has been torn from top to bottom, and the only b",
-      "start": 2235,
-      "url": "https://www.youtube.com/watch?v=NSU4ULBtaTk",
-      "thumbnail": "https://img.youtube.com/vi/NSU4ULBtaTk/hqdefault.jpg",
-      "videoId": "NSU4ULBtaTk"
     }
   ]
 }
