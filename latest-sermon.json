@@ -1,7 +1,16 @@
 {
-  "updated": "2026-08-24T07:56:31Z",
+  "updated": "2026-08-31T14:50:38Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The End of Trying",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-08-30",
+      "description": "Israel\u2019s great mistake was not a lack of passion for God, but trying to establish the righteousness God wanted to give. Christ has brought that pursuit to an end because everything necessary has already been accomplished in Him. Believe in the risen Jesus and receive the wealth of heaven, God\u2019s own ",
+      "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
+      "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/maxresdefault.jpg",
+      "videoId": "nZ7ReXkhfJA"
+    },
     {
       "title": "The Unqualified",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=XmHLk3uFPZw",
       "thumbnail": "https://img.youtube.com/vi/XmHLk3uFPZw/maxresdefault.jpg",
       "videoId": "XmHLk3uFPZw"
-    },
-    {
-      "title": "The God Who Never Leaves",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-20",
-      "description": "Hebrews ends where it has been heading for thirteen chapters \u2014 not with a demand, but with a benediction from the God of peace who raised Jesus, that great Shepherd of the sheep, from the dead through the blood of an everlasting covenant. Every room of your ordinary life \u2014 the table, the door, the b",
-      "url": "https://www.youtube.com/watch?v=dYST-dsmzys",
-      "thumbnail": "https://img.youtube.com/vi/dYST-dsmzys/maxresdefault.jpg",
-      "videoId": "dYST-dsmzys"
     }
   ]
 }
