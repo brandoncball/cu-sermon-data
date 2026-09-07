@@ -1,7 +1,17 @@
 {
-  "updated": "2026-08-31T12:52:01Z",
+  "updated": "2026-09-07T12:52:04Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Mixed Messages",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-09-07",
+      "description": "Mix familiar phrases from five different sports and you get nonsense; mix Moses into the gospel of Jesus and you get the same confusion. Paul called it perverting the gospel, and he refused to yield to it for even an hour. There is only one gospel: salvation by grace through faith in Christ, with no",
+      "start": 1922,
+      "url": "https://www.youtube.com/watch?v=ltlRkVcDPhI",
+      "thumbnail": "https://img.youtube.com/vi/ltlRkVcDPhI/hqdefault.jpg",
+      "videoId": "ltlRkVcDPhI"
+    },
     {
       "title": "The End of Trying",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=RglRLZrlVeM",
       "thumbnail": "https://img.youtube.com/vi/RglRLZrlVeM/hqdefault.jpg",
       "videoId": "RglRLZrlVeM"
-    },
-    {
-      "title": "In the Promise",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-06",
-      "description": "Faith was never a tool to pry things out of God\u2019s hand; it is your unwavering rest in the one thing already true \u2014 you have been made perfectly right with God. The heroes of Hebrews 11 only hoped for the righteousness you now possess in Christ. So take your eyes off your faith as a way to get someth",
-      "start": 2294,
-      "url": "https://www.youtube.com/watch?v=dI61osIkEkY",
-      "thumbnail": "https://img.youtube.com/vi/dI61osIkEkY/hqdefault.jpg",
-      "videoId": "dI61osIkEkY"
     }
   ]
 }
