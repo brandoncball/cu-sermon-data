@@ -1,7 +1,16 @@
 {
-  "updated": "2026-08-31T14:50:38Z",
+  "updated": "2026-09-07T13:16:58Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Mixed Messages",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-09-07",
+      "description": "Mix familiar phrases from five different sports and you get nonsense; mix Moses into the gospel of Jesus and you get the same confusion. Paul called it perverting the gospel, and he refused to yield to it for even an hour. There is only one gospel: salvation by grace through faith in Christ, with no",
+      "url": "https://www.youtube.com/watch?v=ltlRkVcDPhI",
+      "thumbnail": "https://img.youtube.com/vi/ltlRkVcDPhI/maxresdefault.jpg",
+      "videoId": "ltlRkVcDPhI"
+    },
     {
       "title": "The End of Trying",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=PLeT_eQbL-A",
       "thumbnail": "https://img.youtube.com/vi/PLeT_eQbL-A/maxresdefault.jpg",
       "videoId": "PLeT_eQbL-A"
-    },
-    {
-      "title": "You Can't Follow Yourself",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-27",
-      "description": "For years we have been told the Christian life is about following Jesus and working to become more like Him. But the New Covenant tells a better story: what Jesus did, He did as us, so His cross became our cross and in Him we were made the very righteousness of God. This is why we cannot follow Jesu",
-      "url": "https://www.youtube.com/watch?v=XmHLk3uFPZw",
-      "thumbnail": "https://img.youtube.com/vi/XmHLk3uFPZw/maxresdefault.jpg",
-      "videoId": "XmHLk3uFPZw"
     }
   ]
 }
