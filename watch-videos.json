@@ -1,7 +1,17 @@
 {
-  "updated": "2026-09-07T12:52:04Z",
+  "updated": "2026-09-14T13:58:45Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Unequal Exchange",
+      "speaker": "Pastor Adam Newell",
+      "date": "2026-09-14",
+      "description": "",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=dUoS3W1n20k",
+      "thumbnail": "https://img.youtube.com/vi/dUoS3W1n20k/hqdefault.jpg",
+      "videoId": "dUoS3W1n20k"
+    },
     {
       "title": "Mixed Messages",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=dYST-dsmzys",
       "thumbnail": "https://img.youtube.com/vi/dYST-dsmzys/hqdefault.jpg",
       "videoId": "dYST-dsmzys"
-    },
-    {
-      "title": "The Sin That Looks Back",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-13",
-      "description": "Hebrews 12 opens with therefore because everything it asks rests on a finished cross, and the sin it warns against was never your bad habits \u2014 it is the pull to look back to the old system instead of resting in Christ. The race is not trying harder; it is fixing your eyes on Jesus, the author and fi",
-      "start": 1831,
-      "url": "https://www.youtube.com/watch?v=RglRLZrlVeM",
-      "thumbnail": "https://img.youtube.com/vi/RglRLZrlVeM/hqdefault.jpg",
-      "videoId": "RglRLZrlVeM"
     }
   ]
 }
