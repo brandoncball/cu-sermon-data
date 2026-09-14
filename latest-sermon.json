@@ -1,7 +1,16 @@
 {
-  "updated": "2026-09-07T13:16:58Z",
+  "updated": "2026-09-14T13:38:54Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Unequal Exchange",
+      "speaker": "Pastor Adam Newell",
+      "date": "2026-09-14",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=dUoS3W1n20k",
+      "thumbnail": "https://img.youtube.com/vi/dUoS3W1n20k/maxresdefault.jpg",
+      "videoId": "dUoS3W1n20k"
+    },
     {
       "title": "Mixed Messages",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=gD26K2d9OAs",
       "thumbnail": "https://img.youtube.com/vi/gD26K2d9OAs/maxresdefault.jpg",
       "videoId": "gD26K2d9OAs"
-    },
-    {
-      "title": "One and the Same",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-03",
-      "description": "The world says count to ten when life presses in; the gospel says count to one. Through the cross Jesus joined Himself to you, and you are now one spirit with Him. Your sufficiency is not something you produce under pressure \u2014 it is Someone who lives inside you.\n\nPastor's Notes: https://notes.subspl",
-      "url": "https://www.youtube.com/watch?v=PLeT_eQbL-A",
-      "thumbnail": "https://img.youtube.com/vi/PLeT_eQbL-A/maxresdefault.jpg",
-      "videoId": "PLeT_eQbL-A"
     }
   ]
 }
