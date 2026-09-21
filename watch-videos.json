@@ -1,7 +1,17 @@
 {
-  "updated": "2026-09-14T13:58:45Z",
+  "updated": "2026-09-21T14:02:07Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Guarding Grace",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-09-20",
+      "description": "Paul said he was appointed for the defense of the gospel, because the truth of grace is always under pressure. The enemy\u2019s strategy never changes: move the Law across the goal line of your heart until your standing with God feels like your own doing again. But at the cross Jesus abolished that hosti",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=ToNnJ8LNW5s",
+      "thumbnail": "https://img.youtube.com/vi/ToNnJ8LNW5s/hqdefault.jpg",
+      "videoId": "ToNnJ8LNW5s"
+    },
     {
       "title": "The Unequal Exchange",
       "speaker": "Pastor Adam Newell",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=XmHLk3uFPZw",
       "thumbnail": "https://img.youtube.com/vi/XmHLk3uFPZw/hqdefault.jpg",
       "videoId": "XmHLk3uFPZw"
-    },
-    {
-      "title": "The God Who Never Leaves",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-20",
-      "description": "Hebrews ends where it has been heading for thirteen chapters \u2014 not with a demand, but with a benediction from the God of peace who raised Jesus, that great Shepherd of the sheep, from the dead through the blood of an everlasting covenant. Every room of your ordinary life \u2014 the table, the door, the b",
-      "start": 2258,
-      "url": "https://www.youtube.com/watch?v=dYST-dsmzys",
-      "thumbnail": "https://img.youtube.com/vi/dYST-dsmzys/hqdefault.jpg",
-      "videoId": "dYST-dsmzys"
     }
   ]
 }
