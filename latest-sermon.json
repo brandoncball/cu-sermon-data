@@ -1,7 +1,16 @@
 {
-  "updated": "2026-09-14T13:38:54Z",
+  "updated": "2026-09-21T13:37:46Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Guarding Grace",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-09-20",
+      "description": "Paul said he was appointed for the defense of the gospel, because the truth of grace is always under pressure. The enemy\u2019s strategy never changes: move the Law across the goal line of your heart until your standing with God feels like your own doing again. But at the cross Jesus abolished that hosti",
+      "url": "https://www.youtube.com/watch?v=ToNnJ8LNW5s",
+      "thumbnail": "https://img.youtube.com/vi/ToNnJ8LNW5s/maxresdefault.jpg",
+      "videoId": "ToNnJ8LNW5s"
+    },
     {
       "title": "The Unequal Exchange",
       "speaker": "Pastor Adam Newell",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=LFdW11sLwRE",
       "thumbnail": "https://img.youtube.com/vi/LFdW11sLwRE/maxresdefault.jpg",
       "videoId": "LFdW11sLwRE"
-    },
-    {
-      "title": "Heavy Lifting",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-10",
-      "description": "Religion keeps adding pulleys: pray more, fast more, give more, and maybe the weight will finally move. The gospel announces that Jesus already did the heavy lifting, making us right with God without us lifting a finger. His grace is our sufficiency in need and in plenty, and His yoke is easy becaus",
-      "url": "https://www.youtube.com/watch?v=gD26K2d9OAs",
-      "thumbnail": "https://img.youtube.com/vi/gD26K2d9OAs/maxresdefault.jpg",
-      "videoId": "gD26K2d9OAs"
     }
   ]
 }
