@@ -3,9 +3,11 @@ name: Update Watch Grid JSON
 # Runs build-watch.py on a schedule and on demand, then commits any change
 # to watch-videos.json so the Watch page picks it up.
 #
-# Schedule: Monday 07:10 UTC (10 min after the sermon job, to stagger them).
-# Sunday's service uploads to YouTube late Sunday night Central; this picks it
-# up a couple hours later so the Watch grid is current before Monday morning.
+# Schedule: DAILY 12:10 UTC (7:10 AM Central in summer, 6:10 AM in winter).
+# Changed 2026-09-24 from Monday 07:10 UTC: the message start now comes from
+# the YouTube chapters that the Cowork 'Weekly YouTube chapters' task writes
+# Mondays 4:30 AM Central, so the build has to run AFTER that. Daily also picks
+# up chapters added to older videos without waiting a week.
 #
 # The build also resolves each video's message start time (so the on-site
 # player can skip worship) by reading the video's auto-captions with yt-dlp.
@@ -17,7 +19,7 @@ name: Update Watch Grid JSON
 
 on:
   schedule:
-    - cron: '10 7 * * 1'   # Monday 07:10 UTC
+    - cron: '10 12 * * *'  # daily 12:10 UTC
   workflow_dispatch: {}
 
 permissions:
