@@ -143,22 +143,52 @@ def parse_iso_date(iso_str: str) -> str:
     return dt.strftime("%Y-%m-%d")
 
 
+CHAPTER_LINE_RE = re.compile(r"^\s*((?:\d{1,2}:)?[0-5]?\d:[0-5]\d)\s+(.+?)\s*$")
+
+
+def parse_chapters(description: str) -> list:
+    """Return [(seconds, title)] for every YouTube chapter line in the description."""
+    out = []
+    for line in (description or "").splitlines():
+        m = CHAPTER_LINE_RE.match(line)
+        if not m:
+            continue
+        parts = [int(x) for x in m.group(1).split(":")]
+        secs = parts[0] * 3600 + parts[1] * 60 + parts[2] if len(parts) == 3 else parts[0] * 60 + parts[1]
+        out.append((secs, m.group(2)))
+    return out
+
+
 def parse_message_start(description: str, label: str) -> int:
-    """Find a chapter line labeled <label> (e.g. 'Message') and return its
-    timestamp in seconds. Returns 0 if not found. Scans the FULL description,
-    so call this before truncating the display text."""
-    if not description:
-        return 0
+    """Message start from the video's YouTube chapters. Returns 0 if not found.
+    Scans the FULL description, so call this before truncating the display text.
+
+    1. A chapter titled exactly "Message" (the original manual override).
+    2. The chapter right after the "... welcome and announcements" chapter,
+       minus SAFETY_BUFFER.
+       That is how the chapter automation (Cowork/YouTube Chapters, added
+       2026-09-24) marks the sermon start, e.g. "38:04 Guarding Grace: ...".
+
+    Changed 2026-09-24: the old rule matched ANY line containing the word
+    "message", which would have picked up sermon chapters such as
+    "1:12:49 1 Corinthians 1:18: the message of the cross"."""
+    chapters = parse_chapters(description)
     label = label.lower()
-    for line in description.splitlines():
-        if label in line.lower():
-            m = TS_RE.search(line)
-            if m:
-                h = int(m.group(1)) if m.group(1) else 0
-                mn = int(m.group(2))
-                s = int(m.group(3))
-                return h * 3600 + mn * 60 + s
+    for secs, title in chapters:
+        if title.strip().lower() == label:
+            return secs
+    for i, (secs, title) in enumerate(chapters):
+        if "announcements" in title.lower() and i + 1 < len(chapters):
+            # Land a few seconds early, like caption detection does, so the
+            # opening line is never clipped.
+            return max(0, chapters[i + 1][0] - SAFETY_BUFFER)
     return 0
+
+
+def display_description(description: str) -> str:
+    """Description text for the grid card, with the chapter list removed."""
+    keep = [l for l in (description or "").splitlines() if not CHAPTER_LINE_RE.match(l)]
+    return "\n".join(keep).strip()
 
 
 def have_ytdlp() -> bool:
@@ -314,7 +344,7 @@ def build_videos(xml_bytes: bytes, skip: int, count: int) -> list:
             "title": sermon_title,
             "speaker": speaker,
             "date": parse_iso_date(published),
-            "description": description[:300],
+            "description": display_description(description)[:300],
             "start": start,
             "url": f"https://www.youtube.com/watch?v={video_id}",
             "thumbnail": f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg",
