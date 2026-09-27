@@ -1,7 +1,17 @@
 {
-  "updated": "2026-09-24T11:05:19Z",
+  "updated": "2026-09-27T16:56:13Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Preposterous",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-09-27",
+      "description": "The message of the cross sounds preposterous: that you are made perfect by another Man\u2019s effort, the way it would be absurd to think you grow stronger while someone else does the push-ups. Yet that is exactly what God did, perfecting us forever by one offering. The wisdom of this world could never i",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=w__VPv0kL9c",
+      "thumbnail": "https://img.youtube.com/vi/w__VPv0kL9c/hqdefault.jpg",
+      "videoId": "w__VPv0kL9c"
+    },
     {
       "title": "Guarding Grace",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=PLeT_eQbL-A",
       "thumbnail": "https://img.youtube.com/vi/PLeT_eQbL-A/hqdefault.jpg",
       "videoId": "PLeT_eQbL-A"
-    },
-    {
-      "title": "You Can't Follow Yourself",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-07-27",
-      "description": "For years we have been told the Christian life is about following Jesus and working to become more like Him. But the New Covenant tells a better story: what Jesus did, He did as us, so His cross became our cross and in Him we were made the very righteousness of God. This is why we cannot follow Jesu",
-      "start": 2215,
-      "url": "https://www.youtube.com/watch?v=XmHLk3uFPZw",
-      "thumbnail": "https://img.youtube.com/vi/XmHLk3uFPZw/hqdefault.jpg",
-      "videoId": "XmHLk3uFPZw"
     }
   ]
 }
