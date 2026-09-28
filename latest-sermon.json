@@ -1,7 +1,16 @@
 {
-  "updated": "2026-09-21T13:37:46Z",
+  "updated": "2026-09-28T14:57:26Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Preposterous",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-09-28",
+      "description": "The message of the cross sounds preposterous: that you are made perfect by another Man\u2019s effort, the way it would be absurd to think you grow stronger while someone else does the push-ups. Yet that is exactly what God did, perfecting us forever by one offering. The wisdom of this world could never i",
+      "url": "https://www.youtube.com/watch?v=w__VPv0kL9c",
+      "thumbnail": "https://img.youtube.com/vi/w__VPv0kL9c/maxresdefault.jpg",
+      "videoId": "w__VPv0kL9c"
+    },
     {
       "title": "Guarding Grace",
       "speaker": "Pastor Brandon Ball",
@@ -15,7 +24,7 @@
       "title": "The Unequal Exchange",
       "speaker": "Pastor Adam Newell",
       "date": "2026-09-14",
-      "description": "",
+      "description": "0:00 Worship\n28:09 Welcome and giving\n31:42 Pastor Adam Newell: welcome and announcements\n35:58 The Unequal Exchange: Pastor Adam Newell\n38:49 The aleatory contract: an unequal exchange of value\n40:34 2 Corinthians 5:21: He became sin, we became righteous\n41:38 Romans 5:17 and 4:5: a gift, not a wag",
       "url": "https://www.youtube.com/watch?v=dUoS3W1n20k",
       "thumbnail": "https://img.youtube.com/vi/dUoS3W1n20k/maxresdefault.jpg",
       "videoId": "dUoS3W1n20k"
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
       "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/maxresdefault.jpg",
       "videoId": "BsGRauiJjhA"
-    },
-    {
-      "title": "Two Yokes",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-17",
-      "description": "Jesus offered a yoke that is easy and a burden that is light, while the Law laid burdens on men\u2019s shoulders that no one could carry. These are two yokes, two methods of righteousness, and every person is attached to one or the other. The Law was given to show us our sin and silence every boast; grac",
-      "url": "https://www.youtube.com/watch?v=LFdW11sLwRE",
-      "thumbnail": "https://img.youtube.com/vi/LFdW11sLwRE/maxresdefault.jpg",
-      "videoId": "LFdW11sLwRE"
     }
   ]
 }
