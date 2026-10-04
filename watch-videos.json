@@ -1,7 +1,17 @@
 {
-  "updated": "2026-09-28T19:39:39Z",
+  "updated": "2026-10-04T16:50:32Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Uncomplicated",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-10-04",
+      "description": "Under the Old Covenant, forgiveness was a complicated recipe of priests, altars, and endless offerings that could never take away sins. Then Jesus, the Lamb without blemish, offered Himself once and sat down. Now God calls you what the Law demanded of every sacrifice: holy, blameless, and without bl",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=PMjlcQPbjgA",
+      "thumbnail": "https://img.youtube.com/vi/PMjlcQPbjgA/hqdefault.jpg",
+      "videoId": "PMjlcQPbjgA"
+    },
     {
       "title": "Preposterous",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=gD26K2d9OAs",
       "thumbnail": "https://img.youtube.com/vi/gD26K2d9OAs/hqdefault.jpg",
       "videoId": "gD26K2d9OAs"
-    },
-    {
-      "title": "One and the Same",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-03",
-      "description": "The world says count to ten when life presses in; the gospel says count to one. Through the cross Jesus joined Himself to you, and you are now one spirit with Him. Your sufficiency is not something you produce under pressure \u2014 it is Someone who lives inside you.\n\nPastor's Notes: https://notes.subspl",
-      "start": 2166,
-      "url": "https://www.youtube.com/watch?v=PLeT_eQbL-A",
-      "thumbnail": "https://img.youtube.com/vi/PLeT_eQbL-A/hqdefault.jpg",
-      "videoId": "PLeT_eQbL-A"
     }
   ]
 }
