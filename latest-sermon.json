@@ -1,7 +1,16 @@
 {
-  "updated": "2026-09-28T14:57:26Z",
+  "updated": "2026-10-05T15:33:25Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Uncomplicated",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-10-05",
+      "description": "Under the Old Covenant, forgiveness was a complicated recipe of priests, altars, and endless offerings that could never take away sins. Then Jesus, the Lamb without blemish, offered Himself once and sat down. Now God calls you what the Law demanded of every sacrifice: holy, blameless, and without bl",
+      "url": "https://www.youtube.com/watch?v=PMjlcQPbjgA",
+      "thumbnail": "https://img.youtube.com/vi/PMjlcQPbjgA/maxresdefault.jpg",
+      "videoId": "PMjlcQPbjgA"
+    },
     {
       "title": "Preposterous",
       "speaker": "Pastor Brandon Ball",
@@ -46,15 +55,6 @@
       "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
       "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/maxresdefault.jpg",
       "videoId": "nZ7ReXkhfJA"
-    },
-    {
-      "title": "The Unqualified",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-24",
-      "description": "Great faith is not faith in the greatness of your faith; it is faith in the greatness of Jesus. You were unqualified, but Jesus qualified you by removing every charge and making you righteous. The unqualified receive everything because the Qualified One did everything.\n\nPastor's Notes: https://notes",
-      "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
-      "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/maxresdefault.jpg",
-      "videoId": "BsGRauiJjhA"
     }
   ]
 }
