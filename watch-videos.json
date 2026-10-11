@@ -1,7 +1,17 @@
 {
-  "updated": "2026-10-10T17:19:47Z",
+  "updated": "2026-10-11T17:40:32Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The Sound of the Law",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-10-11",
+      "description": "Paul warned the church to beware of the dogs, teachers who insist that right standing with God comes by the effort of the flesh. The sound of the Law is like an angry dog: fear, pain, and never enough. The sound of grace is the opposite, warm and inviting and irresistible to the thirsty soul. True w",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=TMGzpyOlnRs",
+      "thumbnail": "https://img.youtube.com/vi/TMGzpyOlnRs/hqdefault.jpg",
+      "videoId": "TMGzpyOlnRs"
+    },
     {
       "title": "God isn't inspecting you.",
       "speaker": "Church Unlimited",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
       "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/hqdefault.jpg",
       "videoId": "nZ7ReXkhfJA"
-    },
-    {
-      "title": "The Unqualified",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-24",
-      "description": "Great faith is not faith in the greatness of your faith; it is faith in the greatness of Jesus. You were unqualified, but Jesus qualified you by removing every charge and making you righteous. The unqualified receive everything because the Qualified One did everything.\n\nPastor's Notes: https://notes",
-      "start": 2419,
-      "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
-      "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/hqdefault.jpg",
-      "videoId": "BsGRauiJjhA"
     }
   ]
 }
