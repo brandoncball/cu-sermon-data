@@ -1,13 +1,23 @@
 {
-  "updated": "2026-10-11T17:40:32Z",
+  "updated": "2026-10-12T21:15:10Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
     {
+      "title": "Faith Was Never a Tool",
+      "speaker": "The Faith We Lost #Shorts",
+      "date": "2026-10-12",
+      "description": "For decades, faith has been taught as a force. A currency you spend, a lever you pull, a muscle you flex until God finally does the thing.\n\nThe Faith We Lost returns faith to what the Scriptures always said it was: a resting on a finished work and a faithful God who has already done what was needed.",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=EU5P6PYfFIw",
+      "thumbnail": "https://img.youtube.com/vi/EU5P6PYfFIw/hqdefault.jpg",
+      "videoId": "EU5P6PYfFIw"
+    },
+    {
       "title": "The Sound of the Law",
       "speaker": "Pastor Brandon Ball",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "description": "Paul warned the church to beware of the dogs, teachers who insist that right standing with God comes by the effort of the flesh. The sound of the Law is like an angry dog: fear, pain, and never enough. The sound of grace is the opposite, warm and inviting and irresistible to the thirsty soul. True w",
-      "start": 0,
+      "start": 2070,
       "url": "https://www.youtube.com/watch?v=TMGzpyOlnRs",
       "thumbnail": "https://img.youtube.com/vi/TMGzpyOlnRs/hqdefault.jpg",
       "videoId": "TMGzpyOlnRs"
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=ltlRkVcDPhI",
       "thumbnail": "https://img.youtube.com/vi/ltlRkVcDPhI/hqdefault.jpg",
       "videoId": "ltlRkVcDPhI"
-    },
-    {
-      "title": "The End of Trying",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-30",
-      "description": "Israel\u2019s great mistake was not a lack of passion for God, but trying to establish the righteousness God wanted to give. Christ has brought that pursuit to an end because everything necessary has already been accomplished in Him. Believe in the risen Jesus and receive the wealth of heaven, God\u2019s own ",
-      "start": 2372,
-      "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
-      "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/hqdefault.jpg",
-      "videoId": "nZ7ReXkhfJA"
     }
   ]
 }
