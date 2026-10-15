@@ -1,7 +1,17 @@
 {
-  "updated": "2026-10-13T19:14:04Z",
+  "updated": "2026-10-15T16:56:51Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "The law keeps a scorecard, and even on your best day it finds you short.",
+      "speaker": "Church Unlimited",
+      "date": "2026-10-14",
+      "description": "The law keeps a scorecard, and even on your best day it finds you short. Grace tore up the scorecard. In Christ you are 100% right with God, not because you performed but because Jesus did.\n\nCome rest in it with us this Sunday at 10am, in person or online.\n\n#ChurchUnlimitedBHM #TheFoolishGospel #Sho",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=JG2Jhtc-5eU",
+      "thumbnail": "https://img.youtube.com/vi/JG2Jhtc-5eU/hqdefault.jpg",
+      "videoId": "JG2Jhtc-5eU"
+    },
     {
       "title": "Your good behavior was never the reason God chose to love you.",
       "speaker": "Church Unlimited",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=ToNnJ8LNW5s",
       "thumbnail": "https://img.youtube.com/vi/ToNnJ8LNW5s/hqdefault.jpg",
       "videoId": "ToNnJ8LNW5s"
-    },
-    {
-      "title": "The Unequal Exchange",
-      "speaker": "Pastor Adam Newell",
-      "date": "2026-09-14",
-      "description": "",
-      "start": 2138,
-      "url": "https://www.youtube.com/watch?v=dUoS3W1n20k",
-      "thumbnail": "https://img.youtube.com/vi/dUoS3W1n20k/hqdefault.jpg",
-      "videoId": "dUoS3W1n20k"
     }
   ]
 }
