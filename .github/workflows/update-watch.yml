@@ -3,11 +3,21 @@ name: Update Watch Grid JSON
 # Runs build-watch.py on a schedule and on demand, then commits any change
 # to watch-videos.json so the Watch page picks it up.
 #
-# Schedule: DAILY 12:10 UTC (7:10 AM Central in summer, 6:10 AM in winter).
-# Changed 2026-09-24 from Monday 07:10 UTC: the message start now comes from
-# the YouTube chapters that the Cowork 'Weekly YouTube chapters' task writes
-# Mondays 4:30 AM Central, so the build has to run AFTER that. Daily also picks
-# up chapters added to older videos without waiting a week.
+# Schedule: EVERY 6 HOURS at :10 (00:10, 06:10, 12:10, 18:10 UTC; GitHub
+# often starts scheduled runs late). Changed 2026-10-15 from daily 12:10 UTC:
+# YouTube's feed has outages of a few hours most days, so one daily attempt
+# could miss a new Sunday message for days. A run that meets an outage keeps
+# the published grid and stays green unless the site is more than 8 days
+# behind (scripts/sermon_feed.py, feed_down_exit_code).
+# Message starts come from the YouTube chapters that the Cowork 'Weekly
+# YouTube chapters' task writes Mondays 4:30 AM Central (changed 2026-09-24).
+# A run before the chapters exist publishes the new card with start 0; the
+# first run after they are written fills it in, because a description chapter
+# always wins. Frequent runs also pick up chapters added to older videos.
+#
+# FULL SUNDAY MESSAGES ONLY: YouTube Shorts are never listed (2026-10-15).
+# The rule lives in scripts/sermon_feed.py and the tests below must pass
+# before anything is built.
 #
 # The build also resolves each video's message start time (so the on-site
 # player can skip worship) by reading the video's auto-captions with yt-dlp.
@@ -19,8 +29,13 @@ name: Update Watch Grid JSON
 
 on:
   schedule:
-    - cron: '10 12 * * *'  # daily 12:10 UTC
+    - cron: '10 */6 * * *'  # every 6 hours at :10
   workflow_dispatch: {}
+
+# One writer at a time: this and "Update Sermon JSON" both push to main.
+concurrency:
+  group: cu-sermon-data-feeds
+  cancel-in-progress: false
 
 permissions:
   contents: write   # required to commit the updated JSON back to the repo
@@ -58,4 +73,5 @@ jobs:
           git config user.email "cu-sermon-bot@users.noreply.github.com"
           git add watch-videos.json
           git commit -m "Auto-update watch grid JSON ($(date -u +%Y-%m-%d))"
+          git pull --rebase --quiet origin main
           git push

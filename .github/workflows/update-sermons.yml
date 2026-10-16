@@ -3,12 +3,14 @@ name: Update Sermon JSON
 # Runs the build-sermons.py script on a schedule and on demand,
 # then commits any change to latest-sermon.json so the website picks it up.
 #
-# Schedule: DAILY 07:00 UTC (2am Central CDT / 1am CST). Sunday's sermon
-# uploads to YouTube around 11:40pm-12:05am Central; the Monday run picks it
-# up 1-2 hours later so the site is current well before Monday morning
-# visitors. Changed 2026-10-15 from Monday-only: if YouTube's feed is down on
-# Monday, the next day's run catches up instead of leaving last week's
-# message up all week. A run with nothing new commits nothing.
+# Schedule: EVERY 6 HOURS (00:00, 06:00, 12:00, 18:00 UTC; GitHub often
+# starts scheduled runs late). Sunday's sermon uploads to YouTube around
+# 11:40pm-12:05am Central, so the first run after that picks it up.
+# Changed 2026-10-15 from Monday 07:00 UTC only: YouTube's feed has outages of
+# a few hours most days, and a single weekly attempt could leave last week's
+# message up all week. A run with nothing new commits nothing, and a run that
+# meets an outage keeps the published list and stays green unless the site is
+# more than 8 days behind (scripts/sermon_feed.py, feed_down_exit_code).
 #
 # FULL SUNDAY MESSAGES ONLY: YouTube Shorts are never listed (2026-10-15).
 # The rule lives in scripts/sermon_feed.py and the tests below must pass
@@ -18,8 +20,13 @@ name: Update Sermon JSON
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # daily 07:00 UTC
+    - cron: '0 */6 * * *'   # every 6 hours
   workflow_dispatch: {}
+
+# One writer at a time: this and "Update Watch Grid JSON" both push to main.
+concurrency:
+  group: cu-sermon-data-feeds
+  cancel-in-progress: false
 
 permissions:
   contents: write   # required to commit the updated JSON back to the repo
@@ -54,4 +61,5 @@ jobs:
           git config user.email "cu-sermon-bot@users.noreply.github.com"
           git add latest-sermon.json
           git commit -m "Auto-update sermon JSON ($(date -u +%Y-%m-%d))"
+          git pull --rebase --quiet origin main
           git push
