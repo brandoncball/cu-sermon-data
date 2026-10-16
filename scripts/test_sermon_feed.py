@@ -12,6 +12,7 @@ import os
 import sys
 import tempfile
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest import mock
 
@@ -196,8 +197,31 @@ class BuilderTests(unittest.TestCase):
             out.write_text('{"keep": true}', encoding="utf-8")
             with mock.patch.dict(os.environ, {"CU_SERMON_OUTPUT": str(out)}), \
                     mock.patch.object(build_sermons.sermon_feed, "fetch_feed", side_effect=OSError("HTTP 500")):
-                self.assertEqual(build_sermons.main(), 1)
+                self.assertEqual(build_sermons.main(), 1)  # nothing published at all: red
             self.assertEqual(out.read_text(encoding="utf-8"), '{"keep": true}')
+
+    def outage_exit_code(self, module, out_env, newest_days_old, argv=("x",)):
+        newest = (datetime.now(timezone.utc).date() - timedelta(days=newest_days_old)).isoformat()
+        body = json.dumps({"videos": [dict(EXISTING[1], date=newest)]})
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "out.json"
+            out.write_text(body, encoding="utf-8")
+            with mock.patch.dict(os.environ, {out_env: str(out)}), mock.patch.object(sys, "argv", list(argv)), \
+                    mock.patch.object(sermon_feed, "fetch_feed", side_effect=OSError("HTTP Error 404: Not Found")):
+                code = module.main()
+            self.assertEqual(out.read_text(encoding="utf-8"), body)  # never touched during an outage
+        return code
+
+    def test_feed_outage_stays_green_while_the_site_is_current(self):
+        self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 3), 0)
+        self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 8), 0)
+        self.assertEqual(self.outage_exit_code(build_watch, "CU_WATCH_OUTPUT", 3,
+                                               argv=("build-watch.py", "--no-captions")), 0)
+
+    def test_feed_outage_goes_red_once_the_site_falls_behind(self):
+        self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 9), 1)
+        self.assertEqual(self.outage_exit_code(build_watch, "CU_WATCH_OUTPUT", 20,
+                                               argv=("build-watch.py", "--no-captions")), 1)
 
 
 if __name__ == "__main__":

@@ -44,16 +44,22 @@ JSON with the fresh ones from the feed, de-duplicated by videoId, newest first.
 A week of Shorts can never push the messages off the page. Entries carried
 forward are re-checked, so anything published before this rule is purged.
 
+FEED OUTAGES: YouTube's feed regularly returns 404/500 for hours. A build that
+cannot read it keeps the published list and stays green unless the site has
+really fallen behind; see feed_down_exit_code.
+
 Stdlib only.
 """
 
 import json
 import os
 import re
+import sys
 import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 CHANNEL_ID = "UCKRjDX5HMyO4Xls_t4xqC_w"
@@ -93,6 +99,37 @@ def fetch_feed(url: str = FEED_URL, user_agent: str = "cu-sermon-updater/1.0 (+h
             if attempt + 1 < attempts:
                 time.sleep(5 * (attempt + 1))
     raise last_error
+
+
+STALE_AFTER_DAYS = 8  # the newest message is at most 7 days old when the next is due
+
+
+def feed_down_exit_code(existing: list, error) -> int:
+    """What a build does when YouTube's feed cannot be read.
+
+    YouTube's channel feeds have routine outages: HTTP 404 or 500 for hours at
+    a time, often daily, widely reported since late 2025 (on 2026-10-15 it was
+    down from GitHub, Supabase and a home connection at once). The builds run
+    every six hours, so one failed fetch is normal: the published list stays
+    as it is and the run stays green (exit 0), because a failed run sends the
+    repo owner a notification. The run goes red (exit 1) only when the newest
+    published message is more than STALE_AFTER_DAYS old, meaning the site has
+    really fallen behind and someone should look."""
+    newest = max((str(v.get("date") or "") for v in existing), default="")
+    try:
+        age = (datetime.now(timezone.utc).date() - date.fromisoformat(newest)).days
+    except ValueError:
+        age = None
+    if age is not None and age <= STALE_AFTER_DAYS:
+        print(f"WARNING: YouTube feed unavailable ({error}). Published list kept; its newest "
+              f"message is {age} day(s) old. The next run retries.")
+        return 0
+    if age is None:
+        detail = "there is no published message to fall back on"
+    else:
+        detail = f"the newest published message is {age} days old, so the site is falling behind"
+    print(f"ERROR: YouTube feed unavailable ({error}) and {detail}.", file=sys.stderr)
+    return 1
 
 
 def _text(el) -> str:

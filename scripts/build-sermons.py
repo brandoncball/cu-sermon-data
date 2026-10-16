@@ -133,14 +133,15 @@ def main() -> int:
     if override:
         output_path = Path(override)
 
+    existing = sermon_feed.load_existing(output_path)
+
     print(f"Fetching: {FEED_URL}")
     try:
         xml_bytes = sermon_feed.fetch_feed(FEED_URL)
     except Exception as e:
-        print(f"ERROR fetching feed (published JSON left as is): {e}", file=sys.stderr)
-        return 1
+        # Published JSON is left as is either way; see feed_down_exit_code.
+        return sermon_feed.feed_down_exit_code(existing, e)
 
-    existing = sermon_feed.load_existing(output_path)
     try:
         videos = build_videos(xml_bytes, VIDEO_COUNT, existing)
     except Exception as e:

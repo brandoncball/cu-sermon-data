@@ -378,17 +378,18 @@ def main() -> int:
     if override:
         output_path = Path(override)
 
-    print(f"Fetching: {FEED_URL}")
-    try:
-        xml_bytes = fetch_feed(FEED_URL)
-    except Exception as e:
-        print(f"ERROR fetching feed (published JSON left as is): {e}", file=sys.stderr)
-        return 1
-
     # The cards already published: carried forward when the feed no longer
     # holds them, and the cache of resolved start times. Each video is only
     # detected once; videos still sitting at 0 get retried (self-healing).
     existing = sermon_feed.load_existing(output_path)
+
+    print(f"Fetching: {FEED_URL}")
+    try:
+        xml_bytes = fetch_feed(FEED_URL)
+    except Exception as e:
+        # Published JSON is left as is either way; see sermon_feed.feed_down_exit_code.
+        return sermon_feed.feed_down_exit_code(existing, e)
+
     cached = {v["videoId"]: v.get("start", 0) or 0 for v in existing if v.get("videoId")}
 
     try:
