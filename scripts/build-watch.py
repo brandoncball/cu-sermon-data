@@ -9,6 +9,13 @@ This grid lists the 9 most recent services, newest first. Box 1 is always
 the latest Sunday message; every card shifts one slot right when the next
 service is uploaded.
 
+FULL SUNDAY MESSAGES ONLY (2026-10-15). The channel also carries YouTube
+Shorts (sermon-clip reels, promos), and on 2026-10-15 they filled 5 of the 9
+cards. Which uploads count as messages, and why the published list is carried
+forward from one build to the next (the feed holds only 15 uploads, most of
+them Shorts now), is decided in sermon_feed.py, shared with
+build-sermons.py. A carried-forward card keeps its resolved start time.
+
 START TIME / SKIPPING WORSHIP:
 The Watch-page player can open at the preaching instead of the worship set.
 The "start" value (seconds) for each video is resolved in this order:
@@ -62,6 +69,9 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import sermon_feed  # noqa: E402  (shared message rules, same folder)
 
 # -- CONFIG --
 CHANNEL_ID = "UCKRjDX5HMyO4Xls_t4xqC_w"
@@ -118,15 +128,8 @@ WORD_RE = re.compile(r"[a-z']+")
 
 
 def fetch_feed(url: str) -> bytes:
-    local = os.environ.get("CU_FEED_FILE")
-    if local:
-        return Path(local).read_bytes()
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": "cu-watch-updater/1.0 (+https://mychurchunlimited.com)"},
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read()
+    # CU_FEED_FILE (a local XML file) still replaces the network; see sermon_feed.
+    return sermon_feed.fetch_feed(url, user_agent="cu-watch-updater/1.0 (+https://mychurchunlimited.com)")
 
 
 def parse_speaker(title: str) -> tuple:
@@ -143,7 +146,7 @@ def parse_iso_date(iso_str: str) -> str:
     return dt.strftime("%Y-%m-%d")
 
 
-CHAPTER_LINE_RE = re.compile(r"^\s*((?:\d{1,2}:)?[0-5]?\d:[0-5]\d)\s+(.+?)\s*$")
+CHAPTER_LINE_RE = sermon_feed.CHAPTER_LINE_RE
 
 
 def parse_chapters(description: str) -> list:
@@ -187,8 +190,7 @@ def parse_message_start(description: str, label: str) -> int:
 
 def display_description(description: str) -> str:
     """Description text for the grid card, with the chapter list removed."""
-    keep = [l for l in (description or "").splitlines() if not CHAPTER_LINE_RE.match(l)]
-    return "\n".join(keep).strip()
+    return sermon_feed.strip_chapters(description)
 
 
 def have_ytdlp() -> bool:
@@ -291,8 +293,8 @@ def detect_message_start(vtt: str) -> int:
 def resolve_start(video: dict, cached: dict, use_captions: bool) -> int:
     """Precedence: manual chapter > cached value > caption detection > 0."""
     if video["start"]:
-        print(f"    {video['videoId']}: Message chapter in description -- "
-              f"{video['start'] // 60}:{video['start'] % 60:02d}")
+        print(f"    {video['videoId']}: start {video['start'] // 60}:{video['start'] % 60:02d} "
+              f"(description chapter, or already published)")
         return video["start"]
 
     prior = cached.get(video["videoId"], 0)
@@ -315,42 +317,36 @@ def resolve_start(video: dict, cached: dict, use_captions: bool) -> int:
     return start
 
 
-def build_videos(xml_bytes: bytes, skip: int, count: int) -> list:
-    root = ET.fromstring(xml_bytes)
-    entries = root.findall("atom:entry", NS)
-    selected = entries[skip:skip + count]
-    videos = []
-    for entry in selected:
-        title_el = entry.find("atom:title", NS)
-        video_id_el = entry.find("yt:videoId", NS)
-        published_el = entry.find("atom:published", NS)
-        if title_el is None or video_id_el is None or published_el is None:
+def build_videos(xml_bytes: bytes, skip: int, count: int, existing: list = ()) -> list:
+    """Full messages from the feed (Shorts and other uploads skipped and
+    logged), merged with the cards already published (existing), newest
+    first. A fresh card's start comes from its description chapters; a
+    carried-forward card keeps the start it was published with."""
+    fresh = []
+    for entry in sermon_feed.parse_entries(xml_bytes):
+        reason = sermon_feed.skip_reason(entry)
+        if reason:
+            print(f"  skip {entry['videoId']} ({reason}): {entry['title'][:70]}")
             continue
-        raw_title = title_el.text or ""
-        video_id = video_id_el.text or ""
-        published = published_el.text or ""
-        sermon_title, speaker = parse_speaker(raw_title)
-
-        description = ""
-        media_group = entry.find("media:group", NS)
-        if media_group is not None:
-            desc_el = media_group.find("media:description", NS)
-            if desc_el is not None and desc_el.text:
-                description = desc_el.text.strip()
+        video_id = entry["videoId"]
+        description = entry["description"]
+        sermon_title, speaker = parse_speaker(entry["title"])
 
         start = parse_message_start(description, MESSAGE_LABEL)
 
-        videos.append({
+        fresh.append({
             "title": sermon_title,
             "speaker": speaker,
-            "date": parse_iso_date(published),
+            "date": parse_iso_date(entry["published"]),
             "description": display_description(description)[:300],
             "start": start,
             "url": f"https://www.youtube.com/watch?v={video_id}",
             "thumbnail": f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg",
             "videoId": video_id,
         })
-    return videos
+    carried = [dict(v, start=v.get("start", 0) or 0) for v in existing]
+    merged = sermon_feed.merge_messages(fresh, carried, skip + count)
+    return merged[skip:skip + count]
 
 
 def build_payload(videos: list) -> dict:
@@ -385,24 +381,24 @@ def main() -> int:
     print(f"Fetching: {FEED_URL}")
     try:
         xml_bytes = fetch_feed(FEED_URL)
-    except urllib.error.URLError as e:
-        print(f"ERROR fetching feed: {e}", file=sys.stderr)
+    except Exception as e:
+        print(f"ERROR fetching feed (published JSON left as is): {e}", file=sys.stderr)
         return 1
 
-    videos = build_videos(xml_bytes, SKIP_LATEST, DISPLAY_COUNT)
+    # The cards already published: carried forward when the feed no longer
+    # holds them, and the cache of resolved start times. Each video is only
+    # detected once; videos still sitting at 0 get retried (self-healing).
+    existing = sermon_feed.load_existing(output_path)
+    cached = {v["videoId"]: v.get("start", 0) or 0 for v in existing if v.get("videoId")}
+
+    try:
+        videos = build_videos(xml_bytes, SKIP_LATEST, DISPLAY_COUNT, existing)
+    except Exception as e:
+        print(f"ERROR parsing feed (published JSON left as is): {e}", file=sys.stderr)
+        return 1
     if not videos:
-        print("ERROR: no videos parsed from feed", file=sys.stderr)
+        print("ERROR: no full messages found; published JSON left as is", file=sys.stderr)
         return 1
-
-    # Reuse start times already resolved, so each video is only detected once.
-    # Videos still sitting at 0 get retried (self-healing).
-    cached = {}
-    if output_path.exists():
-        try:
-            old = json.loads(output_path.read_text(encoding="utf-8"))
-            cached = {v["videoId"]: v.get("start", 0) for v in old.get("videos", [])}
-        except (json.JSONDecodeError, KeyError, OSError):
-            cached = {}
 
     use_captions = "--no-captions" not in sys.argv and have_ytdlp()
     if "--no-captions" in sys.argv:
