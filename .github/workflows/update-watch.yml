@@ -40,6 +40,9 @@ jobs:
       - name: Install yt-dlp (used to read captions for message detection)
         run: python -m pip install --upgrade --quiet yt-dlp
 
+      - name: Test the full-messages-only rule (no Shorts, 2026-10-15)
+        run: python -m unittest discover -s scripts -p "test_*.py"
+
       - name: Build watch JSON
         env:
           CU_WATCH_OUTPUT: ${{ github.workspace }}/watch-videos.json

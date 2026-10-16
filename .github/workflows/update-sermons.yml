@@ -3,16 +3,22 @@ name: Update Sermon JSON
 # Runs the build-sermons.py script on a schedule and on demand,
 # then commits any change to latest-sermon.json so the website picks it up.
 #
-# Schedule: Monday 07:00 UTC (2am Central CDT / 1am CST). Sunday's sermon
-# uploads to YouTube around 11:40pm-12:05am Central; this picks it up
-# 1-2 hours later so the site is current well before Monday morning visitors.
-# Use the manual trigger below for special-event uploads mid-week.
+# Schedule: DAILY 07:00 UTC (2am Central CDT / 1am CST). Sunday's sermon
+# uploads to YouTube around 11:40pm-12:05am Central; the Monday run picks it
+# up 1-2 hours later so the site is current well before Monday morning
+# visitors. Changed 2026-10-15 from Monday-only: if YouTube's feed is down on
+# Monday, the next day's run catches up instead of leaving last week's
+# message up all week. A run with nothing new commits nothing.
+#
+# FULL SUNDAY MESSAGES ONLY: YouTube Shorts are never listed (2026-10-15).
+# The rule lives in scripts/sermon_feed.py and the tests below must pass
+# before anything is built.
 #
 # Manual trigger: Actions tab > "Update Sermon JSON" > "Run workflow".
 
 on:
   schedule:
-    - cron: '0 7 * * 1'   # Monday 07:00 UTC
+    - cron: '0 7 * * *'   # daily 07:00 UTC
   workflow_dispatch: {}
 
 permissions:
@@ -29,6 +35,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Test the full-messages-only rule
+        run: python -m unittest discover -s scripts -p "test_*.py"
 
       - name: Build sermon JSON
         env:
