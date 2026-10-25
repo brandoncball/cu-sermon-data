@@ -1,7 +1,16 @@
 {
-  "updated": "2026-10-19T12:18:34Z",
+  "updated": "2026-10-25T15:38:36Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "His Score, Your Name",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-10-25",
+      "description": "Righteousness has always been graded pass or fail, and under the Law no one ever passed. Under grace, your grade is Jesus' perfect performance, for by one offering He has perfected forever those who are being sanctified, and the test of faith is simply recognizing that Christ is in you. His score no",
+      "url": "https://www.youtube.com/watch?v=7I6Hie6OiZc",
+      "thumbnail": "https://img.youtube.com/vi/7I6Hie6OiZc/maxresdefault.jpg",
+      "videoId": "7I6Hie6OiZc"
+    },
     {
       "title": "Living In the Why",
       "speaker": "Cody Prickett",
@@ -100,15 +109,6 @@
       "url": "https://www.youtube.com/watch?v=gD26K2d9OAs",
       "thumbnail": "https://img.youtube.com/vi/gD26K2d9OAs/maxresdefault.jpg",
       "videoId": "gD26K2d9OAs"
-    },
-    {
-      "title": "One and the Same",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-03",
-      "description": "The world says count to ten when life presses in; the gospel says count to one. Through the cross Jesus joined Himself to you, and you are now one spirit with Him. Your sufficiency is not something you produce under pressure \u2014 it is Someone who lives inside you.\n\nPastor's Notes: https://notes.subspl",
-      "url": "https://www.youtube.com/watch?v=PLeT_eQbL-A",
-      "thumbnail": "https://img.youtube.com/vi/PLeT_eQbL-A/maxresdefault.jpg",
-      "videoId": "PLeT_eQbL-A"
     }
   ]
 }
