@@ -1,7 +1,17 @@
 {
-  "updated": "2026-10-19T12:56:18Z",
+  "updated": "2026-10-25T16:01:27Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "His Score, Your Name",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-10-25",
+      "description": "Righteousness has always been graded pass or fail, and under the Law no one ever passed. Under grace, your grade is Jesus' perfect performance, for by one offering He has perfected forever those who are being sanctified, and the test of faith is simply recognizing that Christ is in you. His score no",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=7I6Hie6OiZc",
+      "thumbnail": "https://img.youtube.com/vi/7I6Hie6OiZc/hqdefault.jpg",
+      "videoId": "7I6Hie6OiZc"
+    },
     {
       "title": "Living In the Why",
       "speaker": "Cody Prickett",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
       "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/hqdefault.jpg",
       "videoId": "nZ7ReXkhfJA"
-    },
-    {
-      "title": "The Unqualified",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-24",
-      "description": "Great faith is not faith in the greatness of your faith; it is faith in the greatness of Jesus. You were unqualified, but Jesus qualified you by removing every charge and making you righteous. The unqualified receive everything because the Qualified One did everything.\n\nPastor's Notes: https://notes",
-      "start": 2419,
-      "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
-      "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/hqdefault.jpg",
-      "videoId": "BsGRauiJjhA"
     }
   ]
 }
