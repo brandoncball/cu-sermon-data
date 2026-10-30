@@ -180,9 +180,48 @@ def skip_reason(entry: dict):
     if SHORTS_TAG_RE.search(entry.get("title") or "") or SHORTS_TAG_RE.search(entry.get("description") or ""):
         return "Short (#shorts tag)"
     parts = title_parts(entry.get("title", ""))
-    if len(parts) < 3 or parts[-1].lower() != BRAND:
-        return "title is not 'Message | Speaker | Church Unlimited'"
-    return None
+    if len(parts) < 3:
+        return "title is not 'Message | Speaker | Church Unlimited' or 'Message | Subtitle | Speaker'"
+    if parts[-1].lower() == BRAND:
+        return None
+    if is_speaker(parts[-1]):
+        return None
+    return "title is not 'Message | Speaker | Church Unlimited' or 'Message | Subtitle | Speaker'"
+
+
+# 2026-10-30: from 2026-10-26 the weekly YouTube task retitles each message
+# "<Title> | <plain subtitle> | <Speaker>" (no "| Church Unlimited"), e.g.
+# "His Score, Your Name | How God sees you when your best isn't enough | Pastor Brandon Ball".
+# A title in that shape counts as a message when its last part is a speaker:
+# "Pastor ..."/"Pastors ..." or a plain two- or three-word personal name
+# (guests such as "Cody Prickett"). Clip and promo labels never qualify.
+SPEAKER_RE = re.compile(
+    r"^(?:Pastors? [A-Z][\w.'-]*(?: (?:&|[A-Z][\w.'-]*)){0,5}"
+    r"|[A-Z][a-z'.-]+(?: [A-Z][a-z'.-]+){1,2})$"
+)
+NOT_SPEAKER_WORDS = {"clip", "clips", "sermon", "short", "shorts", "live", "reel", "church",
+                     "unlimited", "trailer", "promo", "service", "worship", "teaser", "highlight", "highlights"}
+
+
+def is_speaker(part: str) -> bool:
+    part = (part or "").strip()
+    if not SPEAKER_RE.match(part):
+        return False
+    return not any(w.lower() in NOT_SPEAKER_WORDS for w in re.split(r"[\s&]+", part) if w)
+
+
+def title_and_speaker(title: str) -> tuple:
+    """(sermon_title, speaker) for both title shapes. "Church Unlimited" when unknown."""
+    parts = title_parts(title)
+    if not parts:
+        return "", "Church Unlimited"
+    if len(parts) == 1:
+        return parts[0], "Church Unlimited"
+    if len(parts) == 2:
+        return parts[0], parts[1]
+    if parts[-1].lower() == BRAND:
+        return parts[0], parts[-2]
+    return parts[0], parts[-1]
 
 
 def carried_skip_reason(video: dict):

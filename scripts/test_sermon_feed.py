@@ -67,6 +67,12 @@ MESSAGES = [
     "The Last Piece of Wood | Easter 2026 | Pastor Brandon Ball | Church Unlimited",
     "Secure in Heaven, Strong on Earth | Cody Prickett | Church Unlimited",
     "You Can't Follow Yourself | Pastor Brandon Ball | Church Unlimited",
+    # weekly YouTube task format (2026-10-26 on)
+    "His Score, Your Name | How God sees you when your best isn't enough | Pastor Brandon Ball",
+    "God With Us | Why Jesus came | Christmas Eve 2025 | Pastor Brandon Ball",
+    "Table Talk: Love Through Every Season | Grace in marriage | Pastors Brandon & Abbe Ball",
+    "Free Indeed: A Testimony of Grace | From lip service to real grace | Donnie Chambers",
+    "Living In the Why | Serving from acceptance, not for it | Cody Prickett",
 ]
 SHORTS = [
     ("God isn't inspecting you.",
@@ -100,6 +106,19 @@ class RuleTests(unittest.TestCase):
     def test_title_must_end_with_church_unlimited(self):
         self.assertIsNotNone(sermon_feed.skip_reason(entry("Hook | The Sound of the Law | Sermon Clip")))
         self.assertIsNotNone(sermon_feed.skip_reason(entry("Christmas Eve | Church Unlimited")))
+
+    def test_new_format_rejects_clip_and_promo_labels(self):
+        for t in ["Hook | The Sound of the Law | Sermon Clip", "Big News | Fall Festival | Church Promo",
+                  "Welcome to Church Unlimited | Birmingham, Alabama", "One | Two | Sunday Live Stream 2026"]:
+            self.assertIsNotNone(sermon_feed.skip_reason(entry(t)), t)
+
+    def test_title_and_speaker_both_shapes(self):
+        f = sermon_feed.title_and_speaker
+        self.assertEqual(f("The Sound of the Law | Pastor Brandon Ball | Church Unlimited"), ("The Sound of the Law", "Pastor Brandon Ball"))
+        self.assertEqual(f("The Last Piece of Wood | Easter 2026 | Pastor Brandon Ball | Church Unlimited"), ("The Last Piece of Wood", "Pastor Brandon Ball"))
+        self.assertEqual(f("His Score, Your Name | How God sees you when your best isn't enough | Pastor Brandon Ball"), ("His Score, Your Name", "Pastor Brandon Ball"))
+        self.assertEqual(f("God With Us | Why Jesus came | Christmas Eve 2025 | Pastor Brandon Ball"), ("God With Us", "Pastor Brandon Ball"))
+        self.assertEqual(f("Living In the Why | Serving from acceptance, not for it | Cody Prickett"), ("Living In the Why", "Cody Prickett"))
 
     def test_hashtag_word_boundary(self):
         self.assertIsNone(sermon_feed.skip_reason(entry(MESSAGES[0], "#shortstop is not a tag we use")))
