@@ -133,12 +133,8 @@ def fetch_feed(url: str) -> bytes:
 
 
 def parse_speaker(title: str) -> tuple:
-    parts = [p.strip() for p in title.split("|") if p.strip()]
-    if len(parts) == 1:
-        return parts[0], "Church Unlimited"
-    if len(parts) == 2:
-        return parts[0], parts[1]
-    return parts[0], parts[-2]
+    # Both title shapes; see sermon_feed.title_and_speaker (2026-10-30).
+    return sermon_feed.title_and_speaker(title)
 
 
 def parse_iso_date(iso_str: str) -> str:

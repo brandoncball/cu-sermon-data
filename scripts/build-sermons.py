@@ -43,25 +43,12 @@ FEED_URL = sermon_feed.FEED_URL
 
 def parse_speaker(title: str) -> tuple[str, str]:
     """
-    Parse a YouTube title like "X | Pastor Brandon Ball | Church Unlimited"
-    into (sermon_title, speaker).
-
-    Handles:
-      - "Title | Speaker | Church Unlimited"               (3 parts)
-      - "Title | Series | Speaker | Church Unlimited"      (4 parts)
-      - "Title"                                            (no separator)
-      - Defaults speaker to "Church Unlimited" if unknown
+    (sermon_title, speaker) from a YouTube title. Handles both shapes:
+      - "Title | Speaker | Church Unlimited" and "Title | Series | Speaker | Church Unlimited"
+      - "Title | Subtitle | Speaker" (weekly YouTube task format from 2026-10-26)
+    See sermon_feed.title_and_speaker.
     """
-    parts = [p.strip() for p in title.split("|") if p.strip()]
-    if len(parts) == 1:
-        return parts[0], "Church Unlimited"
-    if len(parts) == 2:
-        # "Title | Something" — assume Something is speaker
-        return parts[0], parts[1]
-    # 3+ parts: last part is the channel/brand, second-to-last is the speaker
-    sermon_title = parts[0]
-    speaker = parts[-2]
-    return sermon_title, speaker
+    return sermon_feed.title_and_speaker(title)
 
 
 def parse_iso_date(iso_str: str) -> str:
