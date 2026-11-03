@@ -1,7 +1,16 @@
 {
-  "updated": "2026-11-02T14:54:29Z",
+  "updated": "2026-11-03T13:43:00Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Do Christians Have to Keep the Sabbath?",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-03",
+      "description": "Paul wrote, \"So let no one judge you in food or in drink, or regarding a festival or a new moon or sabbaths, which are a shadow of things to come, but the substance is of Christ\" (Colossians 2:16-17, NKJV). Pastor Brandon Ball explains why the Sabbath, the food laws and the 613 commands of the Old C",
+      "url": "https://www.youtube.com/watch?v=VzWA1didc-A",
+      "thumbnail": "https://img.youtube.com/vi/VzWA1didc-A/maxresdefault.jpg",
+      "videoId": "VzWA1didc-A"
+    },
     {
       "title": "Do You Have to Forgive to Be Forgiven?",
       "speaker": "Pastor Brandon Ball",
@@ -100,15 +109,6 @@
       "url": "https://www.youtube.com/watch?v=ToNnJ8LNW5s",
       "thumbnail": "https://img.youtube.com/vi/ToNnJ8LNW5s/maxresdefault.jpg",
       "videoId": "ToNnJ8LNW5s"
-    },
-    {
-      "title": "The Unequal Exchange",
-      "speaker": "Pastor Adam Newell",
-      "date": "2026-09-14",
-      "description": "Questions about grace? Ask Grace any time: https://www.graceanswers.com/ask\nLive every Sunday at 10 AM Central in Birmingham, Alabama, and online. Plan your visit: https://www.mychurchunlimited.com/connect",
-      "url": "https://www.youtube.com/watch?v=dUoS3W1n20k",
-      "thumbnail": "https://img.youtube.com/vi/dUoS3W1n20k/maxresdefault.jpg",
-      "videoId": "dUoS3W1n20k"
     }
   ]
 }
