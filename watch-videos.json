@@ -1,7 +1,17 @@
 {
-  "updated": "2026-11-02T15:35:45Z",
+  "updated": "2026-11-03T14:01:41Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Do Christians Have to Keep the Sabbath?",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-03",
+      "description": "Paul wrote, \"So let no one judge you in food or in drink, or regarding a festival or a new moon or sabbaths, which are a shadow of things to come, but the substance is of Christ\" (Colossians 2:16-17, NKJV). Pastor Brandon Ball explains why the Sabbath, the food laws and the 613 commands of the Old C",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=VzWA1didc-A",
+      "thumbnail": "https://img.youtube.com/vi/VzWA1didc-A/hqdefault.jpg",
+      "videoId": "VzWA1didc-A"
+    },
     {
       "title": "Do You Have to Forgive to Be Forgiven?",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=TMGzpyOlnRs",
       "thumbnail": "https://img.youtube.com/vi/TMGzpyOlnRs/hqdefault.jpg",
       "videoId": "TMGzpyOlnRs"
-    },
-    {
-      "title": "Uncomplicated",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-10-05",
-      "description": "Under the Old Covenant, forgiveness was a complicated recipe of priests, altars, and endless offerings that could never take away sins. Then Jesus, the Lamb without blemish, offered Himself once and sat down. Now God calls you what the Law demanded of every sacrifice: holy, blameless, and without bl",
-      "start": 2186,
-      "url": "https://www.youtube.com/watch?v=PMjlcQPbjgA",
-      "thumbnail": "https://img.youtube.com/vi/PMjlcQPbjgA/hqdefault.jpg",
-      "videoId": "PMjlcQPbjgA"
     }
   ]
 }
