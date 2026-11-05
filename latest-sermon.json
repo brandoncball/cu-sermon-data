@@ -1,7 +1,16 @@
 {
-  "updated": "2026-11-03T13:43:00Z",
+  "updated": "2026-11-05T23:19:52Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Why Did God Give the Law?",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-05",
+      "description": "\"Now we know that whatever the law says, it says to those who are under the law, that every mouth may be stopped, and all the world may become guilty before God\" (Romans 3:19, NKJV). Pastor Brandon Ball explains what the law was for: a mirror that showed the problem but could never wash it, pointing",
+      "url": "https://www.youtube.com/watch?v=pQ50f1k-WmY",
+      "thumbnail": "https://img.youtube.com/vi/pQ50f1k-WmY/maxresdefault.jpg",
+      "videoId": "pQ50f1k-WmY"
+    },
     {
       "title": "Do Christians Have to Keep the Sabbath?",
       "speaker": "Pastor Brandon Ball",
@@ -100,15 +109,6 @@
       "url": "https://www.youtube.com/watch?v=w__VPv0kL9c",
       "thumbnail": "https://img.youtube.com/vi/w__VPv0kL9c/maxresdefault.jpg",
       "videoId": "w__VPv0kL9c"
-    },
-    {
-      "title": "Guarding Grace",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-09-20",
-      "description": "Paul said he was appointed for the defense of the gospel, because the truth of grace is always under pressure. The enemy\u2019s strategy never changes: move the Law across the goal line of your heart until your standing with God feels like your own doing again. But at the cross Jesus abolished that hosti",
-      "url": "https://www.youtube.com/watch?v=ToNnJ8LNW5s",
-      "thumbnail": "https://img.youtube.com/vi/ToNnJ8LNW5s/maxresdefault.jpg",
-      "videoId": "ToNnJ8LNW5s"
     }
   ]
 }
