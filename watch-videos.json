@@ -1,7 +1,17 @@
 {
-  "updated": "2026-11-03T14:01:41Z",
+  "updated": "2026-11-05T19:51:43Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Why Did God Give the Law?",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-05",
+      "description": "\"Now we know that whatever the law says, it says to those who are under the law, that every mouth may be stopped, and all the world may become guilty before God\" (Romans 3:19, NKJV). Pastor Brandon Ball explains what the law was for: a mirror that showed the problem but could never wash it, pointing",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=pQ50f1k-WmY",
+      "thumbnail": "https://img.youtube.com/vi/pQ50f1k-WmY/hqdefault.jpg",
+      "videoId": "pQ50f1k-WmY"
+    },
     {
       "title": "Do Christians Have to Keep the Sabbath?",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=3taRWGJK0pI",
       "thumbnail": "https://img.youtube.com/vi/3taRWGJK0pI/hqdefault.jpg",
       "videoId": "3taRWGJK0pI"
-    },
-    {
-      "title": "The Sound of the Law",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-10-12",
-      "description": "Paul warned the church to beware of the dogs, teachers who insist that right standing with God comes by the effort of the flesh. The sound of the Law is like an angry dog: fear, pain, and never enough. The sound of grace is the opposite, warm and inviting and irresistible to the thirsty soul. True w",
-      "start": 2070,
-      "url": "https://www.youtube.com/watch?v=TMGzpyOlnRs",
-      "thumbnail": "https://img.youtube.com/vi/TMGzpyOlnRs/hqdefault.jpg",
-      "videoId": "TMGzpyOlnRs"
     }
   ]
 }
