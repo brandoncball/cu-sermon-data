@@ -144,6 +144,33 @@ class RuleTests(unittest.TestCase):
         self.assertEqual([v["videoId"] for v in merged], ["A", "B"])
         self.assertEqual(merged[0]["title"], "new")
 
+    def test_feed_is_the_sunday_messages_playlist(self):
+        self.assertIn("playlist_id=" + sermon_feed.SERMONS_PLAYLIST_ID, sermon_feed.FEED_URL)
+        self.assertEqual(build_sermons.FEED_URL, sermon_feed.FEED_URL)
+        self.assertEqual(build_watch.FEED_URL, sermon_feed.FEED_URL)
+
+    def test_message_date_is_the_sunday_preached(self):
+        f = sermon_feed.message_date
+        self.assertEqual(f("2026-11-02T06:07:12+00:00"), "2026-11-01")  # Mon 00:07 CST upload of Sunday's message
+        self.assertEqual(f("2026-10-26T05:15:00+00:00"), "2026-10-25")  # Mon 00:15 CDT
+        self.assertEqual(f("2026-10-19T04:47:00+00:00"), "2026-10-18")  # Sun 23:47 CDT
+        self.assertEqual(f("2026-09-20T16:31:00+00:00"), "2026-09-20")  # Sunday midday
+        self.assertEqual(f("2026-12-24T23:30:00+00:00"), "2026-12-24")  # Christmas Eve keeps its date
+        self.assertEqual(f("2029-12-24T23:30:00+00:00"), "2029-12-24")  # even when Dec 24 is a Monday evening
+
+    def test_published_clips_inside_the_feed_window_are_dropped(self):
+        fresh = [{"videoId": "HIDDEN", "date": "2026-11-01", "speaker": "Pastor Brandon Ball", "title": "Hidden in Plain Sight"},
+                 {"videoId": "SCORE", "date": "2026-10-25", "speaker": "Pastor Brandon Ball", "title": "His Score, Your Name"}]
+        existing = [
+            {"videoId": "CLIP1", "date": "2026-11-05", "speaker": "Pastor Brandon Ball", "title": "Why Did God Give the Law?"},
+            {"videoId": "CLIP2", "date": "2026-11-02", "speaker": "Pastor Brandon Ball", "title": "Can a Christian Lose Their Salvation?"},
+            {"videoId": "HIDDEN", "date": "2026-11-02", "speaker": "Pastor Brandon Ball", "title": "Hidden in Plain Sight"},
+            {"videoId": "OLD", "date": "2026-10-12", "speaker": "Pastor Brandon Ball", "title": "The Sound of the Law"},
+        ]
+        merged = sermon_feed.merge_messages(fresh, existing, 12)
+        self.assertEqual([v["videoId"] for v in merged], ["HIDDEN", "SCORE", "OLD"])
+        self.assertEqual(merged[0]["date"], "2026-11-01")
+
     def test_strip_chapters(self):
         self.assertEqual(sermon_feed.strip_chapters(CHAPTERS + "\nGrace is a gift."), "Grace is a gift.")
 
@@ -233,12 +260,12 @@ class BuilderTests(unittest.TestCase):
 
     def test_feed_outage_stays_green_while_the_site_is_current(self):
         self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 3), 0)
-        self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 8), 0)
+        self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 9), 0)
         self.assertEqual(self.outage_exit_code(build_watch, "CU_WATCH_OUTPUT", 3,
                                                argv=("build-watch.py", "--no-captions")), 0)
 
     def test_feed_outage_goes_red_once_the_site_falls_behind(self):
-        self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 9), 1)
+        self.assertEqual(self.outage_exit_code(build_sermons, "CU_SERMON_OUTPUT", 10), 1)
         self.assertEqual(self.outage_exit_code(build_watch, "CU_WATCH_OUTPUT", 20,
                                                argv=("build-watch.py", "--no-captions")), 1)
 

@@ -5,11 +5,11 @@ Church Unlimited - Sermon JSON Builder
 Fetches the latest videos from the Church Unlimited YouTube channel RSS feed
 and writes latest-sermon.json in the shape the website expects.
 
-FULL SUNDAY MESSAGES ONLY (2026-10-15). The channel also carries YouTube
-Shorts (sermon-clip reels, promos), and those must never reach the site. Which
-uploads count as messages, and why the published list is carried forward from
-one build to the next, is decided in sermon_feed.py, shared with
-build-watch.py. videos[0] is always the latest message.
+FULL SUNDAY MESSAGES ONLY. The feed is the "Church Unlimited Sermons"
+playlist, so Shorts and the weekly teaching clips never reach the site. The
+source, the rules, the Sunday dating and the carry-forward are all in
+sermon_feed.py, shared with build-watch.py. videos[0] is always the latest
+Sunday message.
 
 Consumers: the /sermons "Latest Message" hero (videos[0]), the homepage cards
 (first 3) and the /sermons "More Messages" grid (items 2-10, through the
@@ -52,10 +52,8 @@ def parse_speaker(title: str) -> tuple[str, str]:
 
 
 def parse_iso_date(iso_str: str) -> str:
-    """Convert YouTube's ISO timestamp to a YYYY-MM-DD date string."""
-    # Format: 2026-05-04T04:44:03+00:00
-    dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
-    return dt.strftime("%Y-%m-%d")
+    """The Sunday the message was preached (YYYY-MM-DD); see sermon_feed.message_date."""
+    return sermon_feed.message_date(iso_str)
 
 
 def build_videos(xml_bytes: bytes, count: int, existing: list = ()) -> list[dict]:

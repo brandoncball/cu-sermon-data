@@ -11,15 +11,24 @@ Shared by build-sermons.py (latest-sermon.json) and build-watch.py
                         this file)
   watch-videos.json  -> the /watch grid
 
-RULE (Brandon, 2026-10-15): YouTube Shorts never go on the sermons pages. Only
-full Sunday messages do, and the first card is always the latest one.
+RULE (Brandon, 2026-10-15, widened 2026-11-07): only full Sunday messages go
+on the sermons pages. YouTube Shorts and the weekly teaching clips (the
+"Questions About Grace" uploads) never do, and the first card is always the
+latest Sunday message, dated the Sunday it was preached.
+
+SOURCE: the channel's "Church Unlimited Sermons" playlist feed (SERMONS_PLAYLIST_ID),
+not the channel feed. That playlist holds every Sunday message and nothing else;
+the weekly clips carry the same "Title | Subtitle | Speaker" titles as the
+messages, so no title test can tell them apart. A message reaches the site
+only once it is in that playlist.
 
 Why this exists: the channel RSS feed lists every upload. From 2026-10 the CU
 Social Publisher (Make) also posts sermon-clip reels and promos to the channel
 as Shorts, and on 2026-10-15 they had taken the Latest Message hero, two of the
 three homepage cards and 5 of the 9 /watch cards.
 
-A feed entry is a full message only if ALL of these hold:
+A playlist entry is published only if ALL of these hold (guards, in case
+something else is ever added to the playlist):
   1. Its link is not a youtube.com/shorts/ URL.
   2. Neither its title nor its description carries a #shorts tag.
   3. Its title has the Sunday upload format: three or more parts separated by
@@ -37,12 +46,17 @@ Messages uploaded as ordinary videos instead of livestreams count too (The End
 of Trying, 2026-08-30, was an upload, not a stream). There is deliberately no
 "must be a livestream" rule.
 
-CARRY-FORWARD: the RSS feed holds only the channel's 15 newest uploads, and
-Shorts now outnumber messages, so the feed alone may carry just two or three
-messages. Each build therefore merges the messages already published in the
-JSON with the fresh ones from the feed, de-duplicated by videoId, newest first.
-A week of Shorts can never push the messages off the page. Entries carried
-forward are re-checked, so anything published before this rule is purged.
+DATES: "date" is the Sunday the message was preached, not the upload date.
+Messages upload late Sunday night, often just after midnight, so an upload on
+a Monday morning (Central time, before noon) is dated the Sunday before. Any
+other upload keeps its own Central date (a Christmas Eve service stays Dec 24).
+
+CARRY-FORWARD: the feed holds only the playlist's 15 newest entries. Each build
+merges the messages already published in the JSON with the fresh ones from the
+feed, de-duplicated by videoId, newest first. A carried entry inside the
+feed's date window that is not in the feed is not a Sunday message (a clip or
+Short published before this rule), so it is dropped. Entries carried forward
+are re-checked too.
 
 FEED OUTAGES: YouTube's feed regularly returns 404/500 for hours. A build that
 cannot read it keeps the published list and stays green unless the site has
@@ -59,11 +73,19 @@ import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 CHANNEL_ID = "UCKRjDX5HMyO4Xls_t4xqC_w"
-FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
+# "Church Unlimited Sermons" playlist on @Mychurchunlimited: Sunday messages only.
+SERMONS_PLAYLIST_ID = "PLPqJGQdBNQRLupKt07bIOzBIf1ATxu4WR"
+FEED_URL = f"https://www.youtube.com/feeds/videos.xml?playlist_id={SERMONS_PLAYLIST_ID}"
+
+try:
+    from zoneinfo import ZoneInfo
+    CENTRAL = ZoneInfo("America/Chicago")
+except Exception:  # no tz database: CST is close enough to find the day
+    CENTRAL = timezone(timedelta(hours=-6))
 BRAND = "church unlimited"  # last "|" part of every Sunday upload title
 
 NS = {
@@ -101,7 +123,7 @@ def fetch_feed(url: str = FEED_URL, user_agent: str = "cu-sermon-updater/1.0 (+h
     raise last_error
 
 
-STALE_AFTER_DAYS = 8  # the newest message is at most 7 days old when the next is due
+STALE_AFTER_DAYS = 9  # dated by Sunday: 7 days old when the next is due, plus a day of grace
 
 
 def feed_down_exit_code(existing: list, error) -> int:
@@ -165,6 +187,19 @@ def parse_entries(xml_bytes: bytes) -> list:
             "description": description,
         })
     return entries
+
+
+# -- Dates --
+
+def message_date(published: str) -> str:
+    """YYYY-MM-DD of the Sunday a message was preached, from its upload
+    timestamp: a Monday-morning (Central, before noon) upload is the late
+    Sunday-night upload of Sunday's message; anything else keeps its date."""
+    local = datetime.fromisoformat(published.replace("Z", "+00:00")).astimezone(CENTRAL)
+    day = local.date()
+    if local.weekday() == 0 and local.hour < 12:
+        day -= timedelta(days=1)
+    return day.isoformat()
 
 
 # -- The rule --
@@ -260,7 +295,10 @@ def load_existing(path) -> list:
 def merge_messages(fresh: list, existing: list, count: int) -> list:
     """Fresh feed messages, then the previously published ones they do not
     already cover, de-duplicated by videoId and sorted newest date first
-    (stable, so a fresh entry wins a tie). Returns at most `count`."""
+    (stable, so a fresh entry wins a tie). A published entry dated inside the
+    feed's window but missing from it is not a Sunday message and is dropped.
+    Returns at most `count`."""
+    oldest_fresh = min((str(v.get("date") or "") for v in fresh), default="")
     merged, seen = [], set()
     for video in fresh:
         if video["videoId"] not in seen:
@@ -271,6 +309,8 @@ def merge_messages(fresh: list, existing: list, count: int) -> list:
         if not video_id or video_id in seen:
             continue
         reason = carried_skip_reason(video)
+        if not reason and oldest_fresh and str(video.get("date") or "") >= oldest_fresh:
+            reason = "not in the Sunday messages playlist"
         if reason:
             print(f"  drop {video_id} from the published list ({reason}): {str(video.get('title', ''))[:70]}")
             continue

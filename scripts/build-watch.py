@@ -9,12 +9,11 @@ This grid lists the 9 most recent services, newest first. Box 1 is always
 the latest Sunday message; every card shifts one slot right when the next
 service is uploaded.
 
-FULL SUNDAY MESSAGES ONLY (2026-10-15). The channel also carries YouTube
-Shorts (sermon-clip reels, promos), and on 2026-10-15 they filled 5 of the 9
-cards. Which uploads count as messages, and why the published list is carried
-forward from one build to the next (the feed holds only 15 uploads, most of
-them Shorts now), is decided in sermon_feed.py, shared with
-build-sermons.py. A carried-forward card keeps its resolved start time.
+FULL SUNDAY MESSAGES ONLY. The feed is the "Church Unlimited Sermons"
+playlist, so Shorts and the weekly teaching clips never reach the grid. The
+source, the rules, the Sunday dating and the carry-forward are all in
+sermon_feed.py, shared with build-sermons.py. A carried-forward card keeps its
+resolved start time.
 
 START TIME / SKIPPING WORSHIP:
 The Watch-page player can open at the preaching instead of the worship set.
@@ -111,7 +110,7 @@ SAFETY_BUFFER = 20         # seconds
 
 CAPTION_TIMEOUT = 90       # per-video yt-dlp timeout, seconds
 
-FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
+FEED_URL = sermon_feed.FEED_URL  # Sunday messages playlist
 
 NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -138,8 +137,8 @@ def parse_speaker(title: str) -> tuple:
 
 
 def parse_iso_date(iso_str: str) -> str:
-    dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
-    return dt.strftime("%Y-%m-%d")
+    # The Sunday the message was preached; see sermon_feed.message_date.
+    return sermon_feed.message_date(iso_str)
 
 
 CHAPTER_LINE_RE = sermon_feed.CHAPTER_LINE_RE
