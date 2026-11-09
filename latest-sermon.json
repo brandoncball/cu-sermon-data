@@ -1,7 +1,16 @@
 {
-  "updated": "2026-11-07T13:18:18Z",
+  "updated": "2026-11-09T15:22:53Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Carried Away",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-08",
+      "description": "Ezekiel lay on his side for 390 days carrying a sign of Israel's sin, but Jesus bore the sin itself in His own body on the tree, once and for all. Because He carried it away, you have died to sin and now live for righteousness, a promise to believe rather than a principle to work at. God's gift of e",
+      "url": "https://www.youtube.com/watch?v=tHRdU7WEMMU",
+      "thumbnail": "https://img.youtube.com/vi/tHRdU7WEMMU/maxresdefault.jpg",
+      "videoId": "tHRdU7WEMMU"
+    },
     {
       "title": "Hidden in Plain Sight",
       "speaker": "Pastor Brandon Ball",
@@ -100,15 +109,6 @@
       "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
       "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/maxresdefault.jpg",
       "videoId": "BsGRauiJjhA"
-    },
-    {
-      "title": "Two Yokes",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-16",
-      "description": "Jesus offered a yoke that is easy and a burden that is light, while the Law laid burdens on men\u2019s shoulders that no one could carry. These are two yokes, two methods of righteousness, and every person is attached to one or the other. The Law was given to show us our sin and silence every boast; grac",
-      "url": "https://www.youtube.com/watch?v=LFdW11sLwRE",
-      "thumbnail": "https://img.youtube.com/vi/LFdW11sLwRE/maxresdefault.jpg",
-      "videoId": "LFdW11sLwRE"
     }
   ]
 }
