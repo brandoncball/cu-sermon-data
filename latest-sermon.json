@@ -1,7 +1,16 @@
 {
-  "updated": "2026-11-09T15:22:53Z",
+  "updated": "2026-11-16T14:57:45Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Bought Back",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-15",
+      "description": "Hosea paid a slave's price for Gomer, but he brought her home as his wife, not his slave. Jesus paid with His own precious blood, and He didn't buy you back to keep you as a servant; He made you a son and an heir. Whatever your failure named you, you have been bought back, and now you get to call Hi",
+      "url": "https://www.youtube.com/watch?v=L_dmR9rX5n0",
+      "thumbnail": "https://img.youtube.com/vi/L_dmR9rX5n0/maxresdefault.jpg",
+      "videoId": "L_dmR9rX5n0"
+    },
     {
       "title": "Carried Away",
       "speaker": "Pastor Brandon Ball",
@@ -100,15 +109,6 @@
       "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
       "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/maxresdefault.jpg",
       "videoId": "nZ7ReXkhfJA"
-    },
-    {
-      "title": "The Unqualified",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-23",
-      "description": "Great faith is not faith in the greatness of your faith; it is faith in the greatness of Jesus. You were unqualified, but Jesus qualified you by removing every charge and making you righteous. The unqualified receive everything because the Qualified One did everything.\n\nQuestions about grace? Ask Gr",
-      "url": "https://www.youtube.com/watch?v=BsGRauiJjhA",
-      "thumbnail": "https://img.youtube.com/vi/BsGRauiJjhA/maxresdefault.jpg",
-      "videoId": "BsGRauiJjhA"
     }
   ]
 }
