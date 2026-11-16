@@ -1,7 +1,17 @@
 {
-  "updated": "2026-11-09T16:00:22Z",
+  "updated": "2026-11-16T21:55:35Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Bought Back",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-15",
+      "description": "Hosea paid a slave's price for Gomer, but he brought her home as his wife, not his slave. Jesus paid with His own precious blood, and He didn't buy you back to keep you as a servant; He made you a son and an heir. Whatever your failure named you, you have been bought back, and now you get to call Hi",
+      "start": 2343,
+      "url": "https://www.youtube.com/watch?v=L_dmR9rX5n0",
+      "thumbnail": "https://img.youtube.com/vi/L_dmR9rX5n0/hqdefault.jpg",
+      "videoId": "L_dmR9rX5n0"
+    },
     {
       "title": "Carried Away",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=ToNnJ8LNW5s",
       "thumbnail": "https://img.youtube.com/vi/ToNnJ8LNW5s/hqdefault.jpg",
       "videoId": "ToNnJ8LNW5s"
-    },
-    {
-      "title": "The Unequal Exchange",
-      "speaker": "Pastor Adam Newell",
-      "date": "2026-09-13",
-      "description": "Questions about grace? Ask Grace any time: https://www.graceanswers.com/ask\nLive every Sunday at 10 AM Central in Birmingham, Alabama, and online. Plan your visit: https://www.mychurchunlimited.com/connect",
-      "start": 2138,
-      "url": "https://www.youtube.com/watch?v=dUoS3W1n20k",
-      "thumbnail": "https://img.youtube.com/vi/dUoS3W1n20k/hqdefault.jpg",
-      "videoId": "dUoS3W1n20k"
     }
   ]
 }
