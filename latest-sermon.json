@@ -1,7 +1,16 @@
 {
-  "updated": "2026-11-16T14:57:45Z",
+  "updated": "2026-11-23T23:27:07Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Two Mountains, One Amen",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-22",
+      "description": "At Mount Ebal, Israel answered \"Amen\" to every curse, but Scripture records no Amen for the blessings, because no one could keep the Law well enough to claim them. On the cross, Jesus became a curse for us so the blessing of Abraham could come on you, and every promise of God is now Yes and Amen in ",
+      "url": "https://www.youtube.com/watch?v=Zj2keKVS2iU",
+      "thumbnail": "https://img.youtube.com/vi/Zj2keKVS2iU/maxresdefault.jpg",
+      "videoId": "Zj2keKVS2iU"
+    },
     {
       "title": "Bought Back",
       "speaker": "Pastor Brandon Ball",
@@ -100,15 +109,6 @@
       "url": "https://www.youtube.com/watch?v=ltlRkVcDPhI",
       "thumbnail": "https://img.youtube.com/vi/ltlRkVcDPhI/maxresdefault.jpg",
       "videoId": "ltlRkVcDPhI"
-    },
-    {
-      "title": "The End of Trying",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-08-30",
-      "description": "Israel\u2019s great mistake was not a lack of passion for God, but trying to establish the righteousness God wanted to give. Christ has brought that pursuit to an end because everything necessary has already been accomplished in Him. Believe in the risen Jesus and receive the wealth of heaven, God\u2019s own ",
-      "url": "https://www.youtube.com/watch?v=nZ7ReXkhfJA",
-      "thumbnail": "https://img.youtube.com/vi/nZ7ReXkhfJA/maxresdefault.jpg",
-      "videoId": "nZ7ReXkhfJA"
     }
   ]
 }
