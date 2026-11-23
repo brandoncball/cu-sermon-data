@@ -1,7 +1,17 @@
 {
-  "updated": "2026-11-16T21:55:35Z",
+  "updated": "2026-11-23T23:46:31Z",
   "channel": "https://www.youtube.com/@Mychurchunlimited",
   "videos": [
+    {
+      "title": "Two Mountains, One Amen",
+      "speaker": "Pastor Brandon Ball",
+      "date": "2026-11-22",
+      "description": "At Mount Ebal, Israel answered \"Amen\" to every curse, but Scripture records no Amen for the blessings, because no one could keep the Law well enough to claim them. On the cross, Jesus became a curse for us so the blessing of Abraham could come on you, and every promise of God is now Yes and Amen in ",
+      "start": 0,
+      "url": "https://www.youtube.com/watch?v=Zj2keKVS2iU",
+      "thumbnail": "https://img.youtube.com/vi/Zj2keKVS2iU/hqdefault.jpg",
+      "videoId": "Zj2keKVS2iU"
+    },
     {
       "title": "Bought Back",
       "speaker": "Pastor Brandon Ball",
@@ -81,16 +91,6 @@
       "url": "https://www.youtube.com/watch?v=w__VPv0kL9c",
       "thumbnail": "https://img.youtube.com/vi/w__VPv0kL9c/hqdefault.jpg",
       "videoId": "w__VPv0kL9c"
-    },
-    {
-      "title": "Guarding Grace",
-      "speaker": "Pastor Brandon Ball",
-      "date": "2026-09-20",
-      "description": "Paul said he was appointed for the defense of the gospel, because the truth of grace is always under pressure. The enemy\u2019s strategy never changes: move the Law across the goal line of your heart until your standing with God feels like your own doing again. But at the cross Jesus abolished that hosti",
-      "start": 2264,
-      "url": "https://www.youtube.com/watch?v=ToNnJ8LNW5s",
-      "thumbnail": "https://img.youtube.com/vi/ToNnJ8LNW5s/hqdefault.jpg",
-      "videoId": "ToNnJ8LNW5s"
     }
   ]
 }
